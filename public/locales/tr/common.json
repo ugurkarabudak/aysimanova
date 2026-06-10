@@ -1,0 +1,374 @@
+{
+  "metadata": {
+    "title": "Aysima Nova | Yaşam Bilimlerinde Küresel Tedarik ve Ticaret",
+    "description": "Aysima Nova Life Sciences, kozmetik, kişisel bakım, kimyasallar, ilaç hammaddeleri, gıda takviyeleri ve tıbbi ürünler alanında faaliyet gösteren küresel bir tedarik ve ticaret şirketidir."
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "founder": "Kurucumuz",
+    "industries": "Sektörler",
+    "products": "Ürünler",
+    "globalTrade": "Küresel Ticaret",
+    "contact": "İletişim",
+    "getInTouch": "İletişime Geçin"
+  },
+  "hero": {
+    "slide0": {
+      "title": "Yaşam Bilimlerinde Küresel Tedarik ve Ticaret"
+    },
+    "slide1": {
+      "title": "Yaşam Bilimlerinde Küresel Tedarik ve Ticaret",
+      "description": "Kozmetik, kimya, ilaç ve gıda sektörlerinde yüksek kaliteli hammaddeler, API'lar, yenilikçi ürünler ve güvenilir iş ortakları arasında bağlantı kuruyoruz.",
+      "subdescription": "İlgili sektörlerde ihtiyaç duyulan Analiz Sertifikası, DMF ve tüm kalite belgeleri temin edilmektedir (gerekli durumlarda USP, EP, BP farmakopelerine uygun olarak).",
+      "cta": "Hizmetlerimizi Keşfedin"
+    },
+    "founderCard": {
+      "title": "Kurucumuz",
+      "subtitle": "Aysima Nova Life Sciences",
+      "quote": "Bilim yalnızca bir disiplin değil, aynı zamanda bir sorumluluktur. Şirketimizi kalite, güven ve bilimsel bütünlük üzerine inşa ediyoruz.",
+      "tags": {
+        "rdExpert": "Ar-Ge Uzmanı",
+        "cmcAffairs": "CMC İşleri",
+        "pharmaExec": "İlaç Yöneticisi"
+      },
+      "cta": "Tam Profili Oku"
+    }
+  },
+  "home": {
+    "services": {
+      "label": "Yetkinlikler",
+      "title": "Hizmetlerimiz",
+      "description": "Her iş ortağına özelleştirilmiş hizmet — formülasyon, optimizasyon, özel malzemeler, tedarik ve daha fazlasını kapsayan spesifik ihtiyaçlara odaklanarak.",
+      "sourcing": {
+        "title": "Küresel Tedarik ve Ticaret",
+        "item1": "Hammaddeler, API'lar ve nihai ürünler",
+        "item2": "Uluslararası tedarikçi ağı",
+        "item3": "Rekabetçi fiyatlandırma ve lojistik"
+      },
+      "importExport": {
+        "title": "İthalat ve İhracat",
+        "item1": "Uçtan uca ticaret operasyonları",
+        "item2": "Dokümantasyon ve uyumluluk",
+        "item3": "Gümrük ve lojistik koordinasyonu"
+      },
+      "consultancy": {
+        "title": "Teknik Danışmanlık",
+        "item1": "Ürün geliştirme desteği",
+        "item2": "Mevzuat rehberliği",
+        "item3": "Kalite Güvence rehberliği",
+        "item4": "Pazara giriş stratejileri"
+      },
+      "formulation": {
+        "title": "Formülasyon ve Ar-Ge",
+        "description": "Bilimsel mükemmellik aracılığıyla işletmelerin yenilikçi ve yüksek kaliteli ürünler oluşturmasına yardımcı oluyoruz.",
+        "item1": "Ürün formülasyonu",
+        "item2": "İçerik optimizasyonu",
+        "item3": "Formülasyon optimizasyonu",
+        "item4": "Kalite ve performans iyileştirme"
+      }
+    },
+    "industries": {
+      "label": "Sektörler",
+      "title": "Hizmet Verdiğimiz Sektörler",
+      "description": "Dünya genelinde çeşitli dikey pazarlara özelleştirilmiş kimyasal ve hammadde çözümleri sunuyoruz.",
+      "cosmetics": "Kozmetik ve Kişisel Bakım",
+      "chemicals": "Kimyasal Hammaddeler",
+      "pharma": "İlaç İçerikleri",
+      "food": "Gıda Takviyeleri",
+      "medical": "Tıbbi Ürünler",
+      "cta": "Ürünlerimizi Keşfedin"
+    },
+    "contact": {
+      "label": "İletişime Geçin",
+      "title": "İletişim",
+      "founderTitle": "Kurucu ve Genel Müdür",
+      "emailLabel": "E-posta Adresi",
+      "locationLabel": "Konum",
+      "locationValue": "Tuzla / İstanbul",
+      "websiteLabel": "Resmi Web Sitesi",
+      "globalOps": "Küresel Operasyonlar",
+      "globalOpsDesc": "İstanbul'daki stratejik merkezimiz aracılığıyla Avrupa ve Asya pazarlarını birbirine bağlıyoruz."
+    }
+  },
+  "about": {
+    "hero": {
+      "label": "Küresel Pazarları Birleştiriyoruz",
+      "title": "Aysima Nova Life Sciences",
+      "description": "Kozmetik, kişisel bakım, kimyasallar, ilaç hammaddeleri ve API'ların kesişim noktasında faaliyet gösteren küresel bir tedarik ve ticaret merkezi."
+    },
+    "identity": {
+      "label": "Kimliğimiz",
+      "title": "Hakkımızda",
+      "subtitle": "Deneyimlerimizle değer katıyoruz.",
+      "description": "Aysima Nova Life Sciences — tedarik ve ticaretin ötesinde, 20+ yıllık ilaç sektörü deneyimine dayanan teknik danışmanlık sunuyoruz; işletmelerin yenilikçi ve yüksek kaliteli ürünler oluşturmasına yardımcı oluyoruz.",
+      "badge": "Uluslararası Standartlarda Sertifikalı"
+    },
+    "mission": {
+      "title": "Misyonumuz",
+      "description": "Misyonumuz; güven, kalite ve tutarlılık temelinde uzun vadeli ortaklıklar kurmaktır. Uluslararası tedarik, ithalat-ihracat operasyonları ve tedarik zinciri yönetiminde uzmanlaşarak kritik ürünlerin küresel pazarlara tam güvenilirlikle ulaşmasını sağlıyoruz."
+    },
+    "story": {
+      "title": "Her Tedarikatta Hassasiyet",
+      "paragraph1": "Aysima Nova Life Sciences, küresel lojistiğe uygulanan bilimsel hassasiyet ilkesi üzerine kurulmuştur. Sadece ticaret yapmıyoruz; seçiyoruz. Her kimyasal bileşik, kozmetik içerik ve ilaç hammaddesi titiz bir değerlendirme sürecinden geçmektedir.",
+      "paragraph2": "Uzman ekibimiz, uluslararası ticaretin karmaşıklıklarını aşmak için tedarik zinciri yönetimindeki onlarca yıllık deneyimini kullanmakta; iş ortaklarımıza kaynaktan varış noktasına kesintisiz bir yol sunmaktadır.",
+      "stat": "7/24",
+      "statLabel": "Tedarik Takibi",
+      "badge": "GMP Onaylı",
+      "badgeLabel": "Üreticiler"
+    },
+    "values": {
+      "title": "Aysima Nova Life Sciences",
+      "description": "Yaşam bilimleri sektöründeki küresel operasyonlarımıza rehberlik eden ilkeler.",
+      "quality": {
+        "title": "Sarsılmaz Kalite",
+        "description": "Tüm ilaç ve kimyasal hammaddelerin, taviz vermeksizin uluslararası mevzuat standartlarını karşılamasını sağlıyoruz."
+      },
+      "global": {
+        "title": "Küresel Erişim, Yerel Derinlik",
+        "description": "Ağımız kıtalara yayılmakta; ancak yerel mevzuat ve lojistik bilgimiz, tedarik zinciri yürütmesinde cerrahi hassasiyet sağlamaktadır."
+      },
+      "partnership": {
+        "title": "İnsan Odaklı Ortaklık",
+        "description": "Teknolojiyi verimliliğimiz için kullanıyoruz; ancak iş hayatımızı güven yönlendiriyor. Her müşteriyle kurduğumuz uzun vadeli ilişkilere değer veriyoruz."
+      },
+      "sustainability": {
+        "title": "Sürdürülebilirlik",
+        "description": "Yaşam bilimleri sektörünün tamamında çevresel etkiyi en aza indirmek için etik tedarik ve sürdürülebilir lojistiğe bağlıyız."
+      },
+      "intelligence": {
+        "title": "Pazar İstihbaratı",
+        "description": "İş ortaklarımıza, değişken küresel ticaret ortamında yol gösterecek uygulanabilir veri ve pazar trendleri sunuyoruz."
+      }
+    },
+    "cta": {
+      "title": "Tedarik Zincirinizi Optimize Etmeye Hazır mısınız?",
+      "description": "Tedarik ihtiyaçlarınızı ve Aysima Nova'nın küresel operasyonlarınızı nasıl kolaylaştırabileceğini görüşmek için bugün uzmanlarımızla iletişime geçin.",
+      "button1": "Danışma Randevusu Alın",
+      "button2": "Ürün Kataloğunu İnceleyin"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Küresel Ekibimizle İletişime Geçin",
+      "description": "İster ilaç çözümleri ister küresel ticaret ortaklıkları arıyor olun, uzmanlarımız İstanbul'daki merkezimizden size yardım etmeye hazır."
+    },
+    "getInTouch": {
+      "title": "İletişime Geçin",
+      "description": "Bize doğrudan e-posta ile ulaşın. Genellikle 24 saat içinde yanıt veriyoruz."
+    },
+    "otherWays": {
+      "title": "Diğer İletişim Yolları"
+    },
+    "location": "Tuzla / İstanbul, Türkiye",
+    "profile": {
+      "title": "Kurucu ve Genel Müdür"
+    },
+    "headquarters": "Genel Merkez"
+  },
+  "founder": {
+    "hero": {
+      "label": "Liderlik",
+      "title": "Kurucumuzla Tanışın",
+      "description": "Aysima Nova'yı onlarca yıllık ilaç sektörü liderliği deneyimiyle inşa eden kimyager ve yönetici."
+    },
+    "sidebar": {
+      "role": "Kurucu",
+      "company": "Aysima Nova Life Sciences",
+      "educationLabel": "Eğitim",
+      "educationValue": "Kimya, Sakarya Üniversitesi (2003)",
+      "foundedLabel": "Kuruluş",
+      "foundedValue": "Aysima Nova Life Sciences, Mayıs 2026",
+      "expertiseLabel": "Uzmanlık",
+      "expertiseValue": "İlaç Ar-Ge, CMC, Kalite",
+      "tags": ["Ar-Ge Yönetimi", "Analitik Kimya", "Metot Validasyonu", "Stabilite Çalışmaları", "CMC İşleri", "Kalite Kontrol"]
+    },
+    "profile": {
+      "title": "Kurucu Profili",
+      "p1": "2003 yılında Sakarya Üniversitesi Fen-Edebiyat Fakültesi Kimya Bölümü'nden mezun olan kurucumuz, profesyonel kariyerine önde gelen ulusal ve uluslararası ilaç şirketlerinin Ar-Ge departmanlarında başladı.",
+      "p2": "Kariyeri boyunca analitik metot geliştirme, metot validasyonu, stabilite çalışmaları, Ar-Ge yönetimi ve CMC düzenleyici işleri konularında uzmanlaştı. Yıllar içinde Ar-Ge Müdürü, Ar-Ge ve Kalite Kontrol Müdürü, Yetkili Kişi ve Fabrika Müdürü gibi üst düzey liderlik pozisyonlarında görev aldı.",
+      "p3": "İlaç ve kimya sektörlerindeki geniş deneyimiyle Mayıs 2026'da Aysima Nova'yı kurdu; bilimsel mükemmelliği, kalite odaklı yönetimi ve sürdürülebilir bir iş anlayışını kendi kurumsal felsefesi çerçevesinde bir araya getirdi.",
+      "p4": "Bugün şirket, kalite, güvenilirlik, inovasyon ve bilimsel bütünlüğe güçlü bir bağlılıkla faaliyetlerini sürdürmektedir."
+    },
+    "career": {
+      "rdManager": "Ar-Ge Müdürü",
+      "qualifiedPerson": "Yetkili Kişi",
+      "factoryManager": "Fabrika Müdürü",
+      "qcManager": "KK Müdürü"
+    },
+    "message": {
+      "title": "Kurucunun Mesajı",
+      "p1": "Aysima Nova'da bilimin yalnızca bir disiplin değil, aynı zamanda bir sorumluluk olduğuna inanıyoruz.",
+      "p2": "İlaç ve kimya sektörlerindeki uzun yılların deneyiminin ardından — laboratuvar operasyonlarından üst düzey yönetime kadar — bu şirketi net bir vizyonla kurdum: kalite, güven, sürdürülebilirlik ve bilimsel bütünlük üzerine inşa edilmiş bir yapı oluşturmak.",
+      "p3": "Hedefimiz; güvenilir ürünler, güçlü iş ortaklıkları ve inovasyona sürekli bağlılık aracılığıyla uzun vadeli değer yaratmaktır.",
+      "p4": "Sektöre profesyonellik, etik standartlar ve bilime olan tutkumuzla katkıda bulunmaya adanmış durumdayız.",
+      "p5": "Yolculuğumuzun bir parçası olduğunuz için teşekkür ederiz."
+    }
+  },
+  "globalTrade": {
+    "hero": {
+      "label": "Stratejik Tedarik",
+      "title": "Küresel Ticaretin Akışına Hâkim Olmak",
+      "description": "Aysima Nova, kıtaları birbirine bağlayarak yüksek talep gören pazarları hassas dokümantasyon ve uzman gümrük hizmetleriyle güvenilir tedarik zincirleriyle buluşturuyor."
+    },
+    "network": {
+      "title": "Küresel Erişimimiz",
+      "description": "45 ülkede faaliyet göstererek karmaşık lojistik ekosistemlerini yönetiyor ve kargonuzun her seferinde zamanında ulaşmasını sağlıyoruz.",
+      "hubs": "45+ Ticaret Merkezi",
+      "hubsDesc": "Asya, Avrupa ve Amerika'daki kilit ekonomik bölgelerde stratejik varlık.",
+      "warehousing": "Depolama",
+      "warehousingDesc": "Yaşam bilimleri ürünleri için sıcaklık kontrollü depolama çözümleri.",
+      "compliance": "Uyumluluk",
+      "complianceDesc": "Sorunsuz ticaret için eksiksiz dokümantasyon ve gümrük clearance."
+    },
+    "services": {
+      "title": "Uçtan Uca Ticaret Hizmetleri",
+      "description": "Sadece mal taşımıyoruz; hassasiyete odaklı tedarik zinciri yönetimiyle ticari başarıyı tasarlıyoruz.",
+      "importExport": {
+        "title": "İthalat ve İhracat",
+        "description": "İlaçlar ve yüksek teknolojili biyolojik materyallere odaklanarak uluslararası sınırları aşıyoruz.",
+        "item1": "Uçtan uca yönetim",
+        "item2": "Vergi optimizasyonu",
+        "item3": "Kapıdan kapıya teslimat"
+      },
+      "sourcing": {
+        "title": "Küresel Tedarik",
+        "description": "Kritik içerikler için rekabetçi fiyatlar sağlamak amacıyla doğrulanmış uluslararası tedarikçi ağımızdan yararlanıyoruz.",
+        "item1": "Kalite güvence denetimleri",
+        "item2": "Fiyat müzakeresi",
+        "item3": "Etik değerlendirme"
+      },
+      "documentation": {
+        "title": "Ticaret Dokümantasyonu",
+        "description": "Yüksek uyumluluk gerektiren uluslararası ticaret için gerekli sertifika, lisans ve izinlerin karmaşık süreçlerini yönetiyoruz.",
+        "item1": "Menşe Şehadetnamesi",
+        "item2": "Fitosanitasyon belgeleri",
+        "item3": "Gümrük beyannameleri"
+      }
+    },
+    "cta": {
+      "title": "Küresel Operasyonlarınızı Ölçeklendirmeye Hazır mısınız?",
+      "description": "Uluslararası tedarik zincirinizden sürtünmeyi ortadan kaldırmak için Aysima Nova ile iş birliği yapın. Uzmanlarımız mevcut ticaret akışlarınızı denetlemeye hazır.",
+      "button": "Danışma Randevusu Alın"
+    }
+  },
+  "industries": {
+    "hero": {
+      "title": "Küresel Sektör Çözümleri",
+      "description": "Aysima Nova Life Sciences, kalite uyumluluğu ve sürdürülebilir büyümeyi sağlayarak özel sektörlerde hassasiyete dayalı hammaddeler ve lojistik mükemmeliyeti sunmaktadır."
+    },
+    "cosmetics": {
+      "title": "Kozmetik ve Kişisel Bakım",
+      "description": "Yüksek saflıkta aktif içerikler, nemlendiriciler ve özel koruyucularla güzellik standartlarını yükseltiyoruz. Küresel cilt bakımı ve kozmetik markaları için formülasyon inovasyonunu destekliyoruz."
+    },
+    "chemicals": {
+      "title": "Kimyasal Hammaddeler",
+      "description": "Büyük ölçekli üretim için gerekli endüstriyel kimyasallar, çözücüler ve katalizörler için güvenilir tedarik zincirleri."
+    },
+    "pharma": {
+      "title": "İlaç İçerikleri",
+      "description": "Tıp üretiminde güvenlik ve etkinliği sağlamak için API ve eksipiyanların sıkı GMP standartlarında tedariki."
+    },
+    "food": {
+      "title": "Gıda Takviyeleri",
+      "description": "Büyüyen nutrasötik ve fonksiyonel gıda pazarı için premium vitaminler, mineraller ve bitkisel özler."
+    },
+    "medical": {
+      "title": "Tıbbi Ürünler",
+      "description": "Klinik ortamlar için özel tıbbi cihazlar, tanı araçları ve koruyucu ekipmanların dağıtımı."
+    },
+    "compliance": {
+      "title": "Küresel Standartlar ve Yerel Uzmanlık",
+      "iso": {
+        "title": "ISO ve GMP Uyumluluğu",
+        "description": "Hizmet verdiğimiz her sektör, titiz kalite güvence ve uluslararası sertifikasyonlarla desteklenmektedir."
+      },
+      "logistics": {
+        "title": "Lojistik Ağı",
+        "description": "Kritik malzemelerin beş kıtaya zamanında teslimatını sağlayan stratejik ticaret merkezleri."
+      }
+    },
+    "cta": {
+      "title": "Tedarik Zincirinizi Optimize Etmeye Hazır mısınız?",
+      "description": "Spesifik ihtiyaçlarınıza yönelik dünya standartlarında tedarik ve sektör uzmanlığı için Aysima Nova ile iş birliği yapın.",
+      "button": "Katalog İndir"
+    }
+  },
+  "products": {
+    "hero": {
+      "label": "Küresel Yaşam Bilimleri Kataloğu",
+      "title": "Modern Bilim İçin Gelişmiş Çözümler",
+      "description": "En yüksek güvenlik ve etkinlik standartlarına göre tasarlanmış yüksek saflıkta hammaddeler, API'lar ve farmasötik sınıf ürünler, kozmetik malzemeler ve gıda takviyelerinden oluşan özenle seçilmiş koleksiyonumuzu keşfedin."
+    },
+    "section": {
+      "title": "Ürünler"
+    },
+    "empty": {
+      "title": "Ürünler Yakında",
+      "description": "Ürün kataloğumuz hazırlanmaktadır. Lütfen kısa süre sonra tekrar kontrol edin veya özel sorgular için bizimle iletişime geçin.",
+      "cta": "İletişime Geçin"
+    },
+    "compliance": {
+      "iso": "ISO 9001:2015",
+      "isoDesc": "Kalite Yönetim Sertifikalı",
+      "global": "Küresel Erişim",
+      "globalDesc": "45+ Ülkede Dağıtım",
+      "lab": "Lab Testli",
+      "labDesc": "Dahili Saflık Doğrulaması",
+      "dossier": "Tam Dosya",
+      "dossierDesc": "Eksiksiz Mevzuat Desteği"
+    },
+    "badge": {
+      "inStock": "Stokta Var",
+      "newArrival": "Yeni Geldi",
+      "bestSeller": "Çok Satan"
+    },
+    "search": {
+      "placeholder": "Ürün ara..."
+    },
+    "filter": {
+      "all": "Tümü"
+    },
+    "results": {
+      "count_one": "{{count}} ürün bulundu",
+      "count_other": "{{count}} ürün bulundu",
+      "inCategory": "{{category}} kategorisinde",
+      "matchingSearch": "\"{{search}}\" için",
+      "empty": "Ürün bulunamadı",
+      "emptyHint": "Arama veya filtre kriterlerinizi ayarlamayı deneyin.",
+      "clearFilters": "Tüm filtreleri temizle"
+    },
+    "cta": {
+      "description": "Aradığınızı bulamadınız mı? Özel tedarik ve üretim hizmetleri sunuyoruz.",
+      "button": "Tedarik Ekibiyle İletişime Geçin"
+    },
+    "card": {
+      "requestQuote": "Fiyat Teklifi İste"
+    }
+  },
+  "footer": {
+    "brand": "Aysima Nova",
+    "description": "Yaşam bilimlerinde güvenilir iş ortağınız; yüksek kaliteli hammaddeler ve küresel ticaret çözümleri sunuyoruz.",
+    "quickLinks": {
+      "title": "Hızlı Bağlantılar",
+      "about": "Hakkımızda",
+      "industries": "Sektörler",
+      "products": "Ürünler",
+      "globalTrade": "Küresel Ticaret",
+      "contact": "İletişim"
+    },
+    "services": {
+      "title": "Hizmetler",
+      "sourcing": "Küresel Tedarik",
+      "importExport": "İthalat ve İhracat",
+      "techSupport": "Teknik Destek",
+      "rdConsulting": "Ar-Ge Danışmanlığı"
+    },
+    "contact": {
+      "title": "İletişim",
+      "location": "Tuzla / İstanbul, Türkiye"
+    },
+    "copyright": "© AYSİMA NOVA LİFE SCİENCES KİMYA VE DIŞ TİCARET LİMİTED ŞİRKETİ. Tüm hakları saklıdır.",
+    "tagline": "Tedarikatta Küresel Mükemmellik"
+  }
+}

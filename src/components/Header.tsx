@@ -1,23 +1,34 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { useTranslation } from "@/i18n/client";
+import { languages, cookieName } from "@/i18n/settings";
 
-const navItems = [
-  { label: "Home", href: "/" },
-  { label: "About Us", href: "/about" },
-  { label: "Founder", href: "/founder" },
-  { label: "Industries", href: "/industries" },
-  { label: "Products", href: "/products" },
-  { label: "Global Trade", href: "/global-trade" },
-  { label: "Contact", href: "/contact" },
-];
-
-export default function Header() {
+export default function Header({ lng }: { lng: string }) {
   const pathname = usePathname();
+  const router = useRouter();
+  const { t } = useTranslation(lng);
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const navItems = [
+    { label: t("nav.home"), href: `/${lng}` },
+    { label: t("nav.about"), href: `/${lng}/about` },
+    { label: t("nav.founder"), href: `/${lng}/founder` },
+    { label: t("nav.industries"), href: `/${lng}/industries` },
+    { label: t("nav.products"), href: `/${lng}/products` },
+    { label: t("nav.globalTrade"), href: `/${lng}/global-trade` },
+    { label: t("nav.contact"), href: `/${lng}/contact` },
+  ];
+
+  const handleLanguageSwitch = (newLng: string) => {
+    if (newLng === lng) return;
+    document.cookie = `${cookieName}=${newLng}; path=/; max-age=31536000`;
+    const newPath = `/${newLng}${pathname.slice(`/${lng}`.length)}`;
+    router.push(newPath);
+  };
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 12);
@@ -39,7 +50,7 @@ export default function Header() {
     >
       <nav className="flex justify-between items-center w-full px-8 py-3.5 max-w-container-max mx-auto">
         {/* Logo */}
-        <Link href="/" className="shrink-0">
+        <Link href={`/${lng}`} className="shrink-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logo.png"
@@ -72,13 +83,30 @@ export default function Header() {
           })}
         </div>
 
-        {/* Desktop CTA + mobile hamburger */}
+        {/* Desktop CTA + language toggle + mobile hamburger */}
         <div className="flex items-center gap-3 shrink-0">
+          {/* Language toggle */}
+          <div className="flex items-center bg-surface-container-low rounded-lg p-0.5 gap-0.5">
+            {languages.map((lang) => (
+              <button
+                key={lang}
+                onClick={() => handleLanguageSwitch(lang)}
+                className={`px-2.5 py-1.5 rounded-md text-[11px] font-bold uppercase tracking-wider transition-all duration-200 ${
+                  lang === lng
+                    ? "bg-primary text-on-primary shadow-sm"
+                    : "text-on-surface-variant hover:text-primary"
+                }`}
+              >
+                {lang}
+              </button>
+            ))}
+          </div>
+
           <Link
-            href="/contact"
+            href={`/${lng}/contact`}
             className="hidden md:flex items-center gap-1.5 bg-secondary text-white text-[13px] font-semibold px-5 py-2.5 rounded-lg hover:bg-secondary/90 active:scale-95 transition-all duration-200"
           >
-            Get in Touch
+            {t("nav.getInTouch")}
             <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
           </Link>
 
@@ -111,7 +139,7 @@ export default function Header() {
       {/* Mobile dropdown */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ${
-          mobileOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
+          mobileOpen ? "max-h-[480px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <div className="border-t border-outline-variant/40 bg-white px-4 py-3 flex flex-col gap-1">
@@ -132,12 +160,28 @@ export default function Header() {
             );
           })}
           <Link
-            href="/contact"
+            href={`/${lng}/contact`}
             className="mt-2 flex items-center justify-center gap-2 bg-secondary text-white text-[14px] font-semibold px-5 py-3 rounded-lg active:scale-95 transition-all"
           >
-            Get in Touch
+            {t("nav.getInTouch")}
             <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
           </Link>
+          {/* Mobile language toggle */}
+          <div className="mt-2 flex items-center justify-center gap-2 py-2 border-t border-outline-variant/30">
+            {languages.map((lang) => (
+              <button
+                key={lang}
+                onClick={() => handleLanguageSwitch(lang)}
+                className={`px-5 py-2 rounded-lg text-[13px] font-bold uppercase tracking-wider transition-all ${
+                  lang === lng
+                    ? "bg-primary text-on-primary"
+                    : "bg-surface-container-low text-on-surface-variant hover:text-primary"
+                }`}
+              >
+                {lang}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
     </header>

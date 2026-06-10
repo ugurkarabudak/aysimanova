@@ -1,62 +1,64 @@
 import Link from "next/link";
+import { getTranslation } from "@/i18n/server";
 
-export default function Footer() {
+export default async function Footer({ lng }: { lng: string }) {
+  const { t } = await getTranslation(lng);
+
   return (
     <footer className="bg-primary-container text-on-primary">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-section-padding py-stack-lg max-w-container-max mx-auto">
         <div className="col-span-1 md:col-span-1">
           <span className="font-headline-md text-headline-md font-bold text-background-pure block mb-6">
-            Aysima Nova
+            {t("footer.brand")}
           </span>
           <p className="font-body-md text-surface-variant mb-6">
-            Your trusted partner in life sciences, providing high-quality raw
-            materials and global trading solutions.
+            {t("footer.description")}
           </p>
         </div>
 
         <div>
           <h4 className="font-label-lg text-label-lg font-bold mb-6 text-on-primary uppercase tracking-widest">
-            Quick Links
+            {t("footer.quickLinks.title")}
           </h4>
           <ul className="space-y-4">
             <li>
               <Link
-                href="/about"
+                href={`/${lng}/about`}
                 className="text-surface-variant hover:text-secondary-fixed transition-colors duration-200"
               >
-                About Us
+                {t("footer.quickLinks.about")}
               </Link>
             </li>
             <li>
               <Link
-                href="/industries"
+                href={`/${lng}/industries`}
                 className="text-surface-variant hover:text-secondary-fixed transition-colors duration-200"
               >
-                Industries
+                {t("footer.quickLinks.industries")}
               </Link>
             </li>
             <li>
               <Link
-                href="/products"
+                href={`/${lng}/products`}
                 className="text-surface-variant hover:text-secondary-fixed transition-colors duration-200"
               >
-                Products
+                {t("footer.quickLinks.products")}
               </Link>
             </li>
             <li>
               <Link
-                href="/global-trade"
+                href={`/${lng}/global-trade`}
                 className="text-surface-variant hover:text-secondary-fixed transition-colors duration-200"
               >
-                Global Trade
+                {t("footer.quickLinks.globalTrade")}
               </Link>
             </li>
             <li>
               <Link
-                href="/contact"
+                href={`/${lng}/contact`}
                 className="text-surface-variant hover:text-secondary-fixed transition-colors duration-200"
               >
-                Contact
+                {t("footer.quickLinks.contact")}
               </Link>
             </li>
           </ul>
@@ -64,37 +66,31 @@ export default function Footer() {
 
         <div>
           <h4 className="font-label-lg text-label-lg font-bold mb-6 text-on-primary uppercase tracking-widest">
-            Services
+            {t("footer.services.title")}
           </h4>
           <ul className="space-y-4">
-            <li className="text-surface-variant">Global Sourcing</li>
-            <li className="text-surface-variant">Import &amp; Export</li>
-            <li className="text-surface-variant">Technical Support</li>
-            <li className="text-surface-variant">R&amp;D Consulting</li>
+            <li className="text-surface-variant">{t("footer.services.sourcing")}</li>
+            <li className="text-surface-variant">{t("footer.services.importExport")}</li>
+            <li className="text-surface-variant">{t("footer.services.techSupport")}</li>
+            <li className="text-surface-variant">{t("footer.services.rdConsulting")}</li>
           </ul>
         </div>
 
         <div>
           <h4 className="font-label-lg text-label-lg font-bold mb-6 text-on-primary uppercase tracking-widest">
-            Contact Us
+            {t("footer.contact.title")}
           </h4>
           <div className="space-y-3">
             <div className="flex items-center gap-2 text-surface-variant">
-              <span className="material-symbols-outlined text-label-lg">
-                mail
-              </span>
+              <span className="material-symbols-outlined text-label-lg">mail</span>
               <span className="font-body-md">ugurkarabudak@aysimanova.com</span>
             </div>
             <div className="flex items-center gap-2 text-surface-variant">
-              <span className="material-symbols-outlined text-label-lg">
-                location_on
-              </span>
-              <span className="font-body-md">Tuzla / İstanbul, Turkey</span>
+              <span className="material-symbols-outlined text-label-lg">location_on</span>
+              <span className="font-body-md">{t("footer.contact.location")}</span>
             </div>
             <div className="flex items-center gap-2 text-surface-variant">
-              <span className="material-symbols-outlined text-label-lg">
-                language
-              </span>
+              <span className="material-symbols-outlined text-label-lg">language</span>
               <a
                 href="https://www.aysimanova.com"
                 className="font-body-md hover:text-secondary-fixed transition-colors"
@@ -110,12 +106,12 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 pb-8">
           <div className="flex flex-col gap-1">
             <p className="font-label-sm text-label-sm text-surface-variant">
-              &copy; AYSİMA NOVA LİFE SCİENCES KİMYA VE DIŞ TİCARET LİMİTED ŞİRKETİ. All rights reserved.
+              {t("footer.copyright")}
             </p>
           </div>
           <div className="flex items-center gap-2 font-label-sm text-label-sm text-surface-variant">
             <span className="material-symbols-outlined text-xs">public</span>
-            Global Excellence in Sourcing
+            {t("footer.tagline")}
           </div>
         </div>
       </div>

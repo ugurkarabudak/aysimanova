@@ -4,20 +4,31 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 import type { SanityProduct, SanityCategory } from "@/sanity/queries";
 import { urlFor } from "@/sanity/image";
+import { useTranslation } from "@/i18n/client";
+import type { TFunction } from "i18next";
 
-const BADGE_STYLES: Record<string, { bg: string; text: string; label: string }> = {
-  "in-stock": { bg: "bg-secondary", text: "text-on-secondary", label: "In Stock" },
-  "new-arrival": { bg: "bg-primary", text: "text-on-primary", label: "New Arrival" },
-  "best-seller": { bg: "bg-tertiary-container", text: "text-on-tertiary-container", label: "Best Seller" },
+const BADGE_STYLES: Record<string, { bg: string; text: string }> = {
+  "in-stock": { bg: "bg-secondary", text: "text-on-secondary" },
+  "new-arrival": { bg: "bg-primary", text: "text-on-primary" },
+  "best-seller": { bg: "bg-tertiary-container", text: "text-on-tertiary-container" },
+};
+
+const BADGE_KEY_MAP: Record<string, string> = {
+  "in-stock": "products.badge.inStock",
+  "new-arrival": "products.badge.newArrival",
+  "best-seller": "products.badge.bestSeller",
 };
 
 export default function ProductsGrid({
   products,
   categories,
+  lng,
 }: {
   products: SanityProduct[];
   categories: SanityCategory[];
+  lng: string;
 }) {
+  const { t } = useTranslation(lng);
   const [search, setSearch] = useState("");
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
 
@@ -34,13 +45,25 @@ export default function ProductsGrid({
         (p) =>
           p.name.toLowerCase().includes(q) ||
           p.description?.toLowerCase().includes(q) ||
-          p.tags?.some((t) => t.toLowerCase().includes(q)) ||
+          p.tags?.some((tag) => tag.toLowerCase().includes(q)) ||
           p.category?.name?.toLowerCase().includes(q)
       );
     }
 
     return result;
   }, [products, search, activeCategory]);
+
+  const resultText = (() => {
+    let text = t("products.results.count", { count: filtered.length });
+    if (activeCategory) {
+      const catName = categories.find((c) => c._id === activeCategory)?.name;
+      text += " " + t("products.results.inCategory", { category: catName });
+    }
+    if (search.trim()) {
+      text += " " + t("products.results.matchingSearch", { search });
+    }
+    return text;
+  })();
 
   return (
     <>
@@ -53,7 +76,7 @@ export default function ProductsGrid({
           </span>
           <input
             type="text"
-            placeholder="Search products..."
+            placeholder={t("products.search.placeholder")}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="w-full pl-11 pr-4 py-3 rounded-xl border border-outline-variant bg-white font-body-md text-body-md text-on-surface focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all"
@@ -78,7 +101,7 @@ export default function ProductsGrid({
                 : "bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high"
             }`}
           >
-            All
+            {t("products.filter.all")}
           </button>
           {categories.map((cat) => (
             <button
@@ -97,17 +120,13 @@ export default function ProductsGrid({
       </div>
 
       {/* Results count */}
-      <p className="font-label-sm text-label-sm text-outline mb-6">
-        {filtered.length} product{filtered.length !== 1 ? "s" : ""} found
-        {activeCategory && ` in ${categories.find((c) => c._id === activeCategory)?.name}`}
-        {search && ` matching "${search}"`}
-      </p>
+      <p className="font-label-sm text-label-sm text-outline mb-6">{resultText}</p>
 
       {/* Product grid */}
       {filtered.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filtered.map((product) => (
-            <ProductCard key={product._id} product={product} />
+            <ProductCard key={product._id} product={product} lng={lng} t={t} />
           ))}
         </div>
       ) : (
@@ -116,10 +135,10 @@ export default function ProductsGrid({
             inventory_2
           </span>
           <h3 className="font-headline-md text-headline-md text-primary mb-2">
-            No products found
+            {t("products.results.empty")}
           </h3>
           <p className="font-body-md text-body-md text-on-surface-variant mb-6">
-            Try adjusting your search or filter criteria.
+            {t("products.results.emptyHint")}
           </p>
           <button
             onClick={() => {
@@ -128,7 +147,7 @@ export default function ProductsGrid({
             }}
             className="text-secondary font-label-lg text-label-lg hover:underline"
           >
-            Clear all filters
+            {t("products.results.clearFilters")}
           </button>
         </div>
       )}
@@ -136,22 +155,30 @@ export default function ProductsGrid({
       {/* CTA */}
       <div className="mt-16 text-center">
         <p className="font-body-md text-body-md text-on-surface-variant mb-6">
-          Don&apos;t see what you&apos;re looking for? We offer custom sourcing
-          and manufacturing services.
+          {t("products.cta.description")}
         </p>
         <Link
-          href="/contact"
+          href={`/${lng}/contact`}
           className="bg-secondary text-on-secondary px-10 py-4 rounded-lg font-label-lg text-label-lg hover:opacity-90 transition-all shadow-md inline-block"
         >
-          Contact Procurement Team
+          {t("products.cta.button")}
         </Link>
       </div>
     </>
   );
 }
 
-function ProductCard({ product }: { product: SanityProduct }) {
-  const badge = product.badge ? BADGE_STYLES[product.badge] : null;
+function ProductCard({
+  product,
+  lng,
+  t,
+}: {
+  product: SanityProduct;
+  lng: string;
+  t: TFunction;
+}) {
+  const badgeStyle = product.badge ? BADGE_STYLES[product.badge] : null;
+  const badgeKey = product.badge ? BADGE_KEY_MAP[product.badge] : null;
 
   return (
     <div className="bg-white rounded-xl overflow-hidden border border-outline-variant hover:shadow-xl transition-shadow duration-300 flex flex-col">
@@ -170,11 +197,11 @@ function ProductCard({ product }: { product: SanityProduct }) {
             </span>
           </div>
         )}
-        {badge && (
+        {badgeStyle && badgeKey && (
           <span
-            className={`absolute top-4 right-4 ${badge.bg} ${badge.text} text-label-sm font-label-sm px-3 py-1 rounded-full`}
+            className={`absolute top-4 right-4 ${badgeStyle.bg} ${badgeStyle.text} text-label-sm font-label-sm px-3 py-1 rounded-full`}
           >
-            {badge.label}
+            {t(badgeKey)}
           </span>
         )}
       </div>
@@ -228,10 +255,10 @@ function ProductCard({ product }: { product: SanityProduct }) {
         )}
 
         <Link
-          href="/contact"
+          href={`/${lng}/contact`}
           className="w-full mt-auto bg-white border-2 border-primary text-primary py-3 rounded-lg font-label-lg text-label-lg hover:bg-primary hover:text-on-primary transition-all active:scale-95 text-center block"
         >
-          Request Quote
+          {t("products.card.requestQuote")}
         </Link>
       </div>
     </div>

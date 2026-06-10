@@ -2,8 +2,10 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useReducer } from "react";
+import { useTranslation } from "@/i18n/client";
 
-export default function HeroSlider() {
+export default function HeroSlider({ lng }: { lng: string }) {
+  const { t } = useTranslation(lng);
   const [current, toggle] = useReducer((s: number) => (s === 0 ? 1 : 0), 0);
 
   const goTo = useCallback(
@@ -61,9 +63,8 @@ export default function HeroSlider() {
             }}
           />
           <h1 className="font-headline-xl text-headline-xl text-on-primary mb-4">
-          Global Sourcing &amp; Trading in Life Sciences
+            {t("hero.slide0.title")}
           </h1>
-
         </div>
       </Slide>
 
@@ -76,26 +77,20 @@ export default function HeroSlider() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-16 w-full">
             <div className="text-on-primary">
               <h2 className="font-headline-xl text-headline-xl mb-6">
-                Global Sourcing &amp; Trading in Life Sciences
+                {t("hero.slide1.title")}
               </h2>
               <p className="font-body-lg text-body-lg mb-6 text-on-primary-container">
-                We connect high-quality raw materials, API&apos;s, innovative
-                products, and reliable partners across cosmetics, chemicals,
-                pharma, and food industries.
+                {t("hero.slide1.description")}
               </p>
               <p className="font-body-md text-body-md mb-10 text-on-primary-container/80">
-                Certificate of Analysis, DMF and all quality documents needed in
-                related industries are provided (based on USP, EP, BP
-                pharmacopoeias if necessary).
+                {t("hero.slide1.subdescription")}
               </p>
               <Link
-                href="/products"
+                href={`/${lng}/products`}
                 className="inline-flex items-center gap-2 bg-secondary text-on-secondary px-8 py-4 rounded-lg font-label-lg text-label-lg hover:brightness-90 transition-all"
               >
-                Explore Our Services
-                <span className="material-symbols-outlined">
-                  arrow_forward
-                </span>
+                {t("hero.slide1.cta")}
+                <span className="material-symbols-outlined">arrow_forward</span>
               </Link>
             </div>
 
@@ -109,35 +104,31 @@ export default function HeroSlider() {
                   </div>
                   <div>
                     <p className="font-headline-md text-headline-md text-on-primary leading-tight">
-                      Our Founder
+                      {t("hero.founderCard.title")}
                     </p>
                     <p className="font-label-sm text-label-sm text-on-primary-container mt-0.5">
-                      Aysima Nova Life Sciences
+                      {t("hero.founderCard.subtitle")}
                     </p>
                   </div>
                 </div>
                 <p className="font-body-md text-body-md text-on-primary-container/90 leading-relaxed mb-6 italic">
-                  &ldquo;Science is not only a discipline, but also a
-                  responsibility. We build our company on quality, trust, and
-                  scientific integrity.&rdquo;
+                  &ldquo;{t("hero.founderCard.quote")}&rdquo;
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {["R&D Expert", "CMC Affairs", "Pharma Executive"].map(
-                    (tag) => (
-                      <span
-                        key={tag}
-                        className="px-3 py-1 bg-white/10 border border-white/20 rounded-full font-label-sm text-label-sm text-on-primary-container"
-                      >
-                        {tag}
-                      </span>
-                    )
-                  )}
+                  {(["rdExpert", "cmcAffairs", "pharmaExec"] as const).map((key) => (
+                    <span
+                      key={key}
+                      className="px-3 py-1 bg-white/10 border border-white/20 rounded-full font-label-sm text-label-sm text-on-primary-container"
+                    >
+                      {t(`hero.founderCard.tags.${key}`)}
+                    </span>
+                  ))}
                 </div>
                 <Link
-                  href="/founder"
+                  href={`/${lng}/founder`}
                   className="flex items-center justify-center gap-2 w-full bg-secondary/80 hover:bg-secondary text-on-secondary py-3 rounded-xl font-label-lg text-label-lg transition-all"
                 >
-                  Read Full Profile
+                  {t("hero.founderCard.cta")}
                   <span className="material-symbols-outlined text-[16px]">
                     arrow_forward
                   </span>

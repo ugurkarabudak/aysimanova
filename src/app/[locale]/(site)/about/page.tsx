@@ -1,22 +1,28 @@
 import Link from "next/link";
+import { getTranslation } from "@/i18n/server";
 
-export default function AboutPage() {
+export default async function AboutPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const { t } = await getTranslation(locale);
+
   return (
     <>
-      {/* Hero Section: Identity & Impact */}
+      {/* Hero Section */}
       <section className="relative bg-primary-container py-24 overflow-hidden">
         <div className="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center relative z-10">
           <div className="space-y-stack-md">
             <span className="text-secondary-fixed font-label-lg text-label-lg uppercase tracking-widest">
-              Bridging Global Markets
+              {t("about.hero.label")}
             </span>
             <h1 className="text-on-primary font-headline-xl text-headline-xl">
-              Aysima Nova Life Sciences
+              {t("about.hero.title")}
             </h1>
             <p className="text-on-primary-container font-body-lg text-body-lg opacity-90 max-w-xl">
-              A global sourcing and trading powerhouse operating at the
-              intersection of cosmetics, personal care, chemicals,
-              pharmaceutical raw materials and API&apos;s.
+              {t("about.hero.description")}
             </p>
           </div>
           <div className="relative group">
@@ -36,21 +42,16 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <span className="text-secondary font-label-lg text-label-lg uppercase tracking-widest mb-4 block">
-                Our Identity
+                {t("about.identity.label")}
               </span>
               <h2 className="font-headline-lg text-headline-lg mb-2 text-primary">
-                About Us
+                {t("about.identity.title")}
               </h2>
               <p className="font-body-lg text-body-lg text-secondary mb-6">
-                We add value with our experiences.
+                {t("about.identity.subtitle")}
               </p>
               <div className="space-y-4 text-on-surface-variant font-body-md text-body-md leading-relaxed">
-                <p>
-                  Aysima Nova Life Sciences — beyond sourcing and trading, we
-                  offer technical consultancy based on 20+ years in
-                  pharmaceutical sector experiences; helping businesses create
-                  innovative and high-quality products.
-                </p>
+                <p>{t("about.identity.description")}</p>
               </div>
             </div>
             <div className="relative">
@@ -62,12 +63,8 @@ export default function AboutPage() {
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-secondary p-8 rounded-xl text-on-secondary hidden md:block">
-                <span className="material-symbols-outlined text-4xl block mb-2">
-                  workspace_premium
-                </span>
-                <p className="font-label-lg text-label-lg">
-                  Certified Global Standards
-                </p>
+                <span className="material-symbols-outlined text-4xl block mb-2">workspace_premium</span>
+                <p className="font-label-lg text-label-lg">{t("about.identity.badge")}</p>
               </div>
             </div>
           </div>
@@ -78,52 +75,39 @@ export default function AboutPage() {
       <section className="py-section-padding bg-surface-container-lowest">
         <div className="max-w-container-max mx-auto px-gutter">
           <div className="max-w-3xl mx-auto text-center space-y-stack-md">
-            <span className="material-symbols-outlined text-secondary text-5xl">
-              handshake
-            </span>
+            <span className="material-symbols-outlined text-secondary text-5xl">handshake</span>
             <h2 className="font-headline-lg text-headline-lg text-primary">
-              Our Mission
+              {t("about.mission.title")}
             </h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-              Our mission is to build long-term partnerships based on trust,
-              quality, and consistency. We specialize in international
-              procurement, import-export operations, and supply chain management,
-              ensuring that essential products reach global markets with absolute
-              reliability.
+              {t("about.mission.description")}
             </p>
           </div>
         </div>
       </section>
 
-      {/* Our Story: Asymmetric Layout */}
+      {/* Our Story */}
       <section className="py-section-padding bg-surface">
         <div className="max-w-container-max mx-auto px-gutter">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
             <div className="md:col-span-7 space-y-stack-md">
               <h2 className="font-headline-lg text-headline-lg text-primary">
-                Precision in Every Procurement
+                {t("about.story.title")}
               </h2>
               <div className="h-1 w-20 bg-secondary rounded-full"></div>
               <p className="font-body-md text-body-md text-on-surface-variant">
-                Aysima Nova Life Sciences was founded on the principle of
-                scientific precision applied to global logistics. We don&apos;t
-                just trade; we curate. Every chemical compound, cosmetic
-                ingredient, and pharmaceutical raw material passes through a
-                rigorous vetting process.
+                {t("about.story.paragraph1")}
               </p>
               <p className="font-body-md text-body-md text-on-surface-variant">
-                Our team of industry experts leverages decades of experience in
-                supply chain management to navigate the complexities of
-                international trade, providing our partners with a seamless path
-                from source to destination.
+                {t("about.story.paragraph2")}
               </p>
               <div className="grid grid-cols-1 gap-stack-md pt-stack-md">
                 <div className="border-l-4 border-secondary pl-4">
                   <p className="font-headline-md text-headline-md text-primary">
-                    24/7
+                    {t("about.story.stat")}
                   </p>
                   <p className="font-label-sm text-label-sm text-on-surface-variant uppercase">
-                    Supply Monitoring
+                    {t("about.story.statLabel")}
                   </p>
                 </div>
               </div>
@@ -136,10 +120,10 @@ export default function AboutPage() {
               />
               <div className="absolute -bottom-6 -left-6 bg-primary p-gutter rounded-lg shadow-2xl hidden md:block">
                 <p className="text-on-primary font-headline-md text-headline-md">
-                  GMP Approved
+                  {t("about.story.badge")}
                 </p>
                 <p className="text-on-primary-container text-label-sm">
-                  Manufacturers
+                  {t("about.story.badgeLabel")}
                 </p>
               </div>
             </div>
@@ -147,46 +131,39 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Core Values: Bento Grid */}
+      {/* Core Values */}
       <section className="py-section-padding bg-surface-container-low">
         <div className="max-w-container-max mx-auto px-gutter">
           <div className="text-center mb-16">
             <h2 className="font-headline-lg text-headline-lg text-primary">
-Aysima Nova Life Sciences
+              {t("about.values.title")}
             </h2>
             <p className="text-on-surface-variant font-body-md text-body-md">
-              The principles that guide our global operations in the life sciences sector.
+              {t("about.values.description")}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
             <div className="bg-surface-container-lowest p-gutter rounded-xl border border-outline-variant hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-success-muted rounded-lg flex items-center justify-center mb-stack-md">
-                <span className="material-symbols-outlined text-secondary">
-                  verified_user
-                </span>
+                <span className="material-symbols-outlined text-secondary">verified_user</span>
               </div>
               <h3 className="font-headline-md text-headline-md text-primary mb-2">
-                Unwavering Quality
+                {t("about.values.quality.title")}
               </h3>
               <p className="font-body-md text-body-md text-on-surface-variant">
-                We ensure all pharmaceutical and chemical raw materials meet
-                strict international regulatory standards without compromise.
+                {t("about.values.quality.description")}
               </p>
             </div>
             <div className="bg-primary-container p-gutter rounded-xl md:col-span-1 md:row-span-2 flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mb-stack-md">
-                  <span className="material-symbols-outlined text-secondary-fixed">
-                    language
-                  </span>
+                  <span className="material-symbols-outlined text-secondary-fixed">language</span>
                 </div>
                 <h3 className="font-headline-md text-headline-md text-on-primary mb-4">
-                  Global Reach, Local Depth
+                  {t("about.values.global.title")}
                 </h3>
                 <p className="font-body-md text-body-md text-on-primary-container">
-                  Our network spans continents, but our knowledge of local
-                  regulations and logistics allows for surgical precision in
-                  supply chain execution.
+                  {t("about.values.global.description")}
                 </p>
               </div>
               <img
@@ -197,44 +174,35 @@ Aysima Nova Life Sciences
             </div>
             <div className="bg-surface-container-lowest p-gutter rounded-xl border border-outline-variant hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-success-muted rounded-lg flex items-center justify-center mb-stack-md">
-                <span className="material-symbols-outlined text-secondary">
-                  groups
-                </span>
+                <span className="material-symbols-outlined text-secondary">groups</span>
               </div>
               <h3 className="font-headline-md text-headline-md text-primary mb-2">
-                Human Partnership
+                {t("about.values.partnership.title")}
               </h3>
               <p className="font-body-md text-body-md text-on-surface-variant">
-                Technology drives our efficiency, but trust drives our business.
-                We value the long-term relationships we build with every client.
+                {t("about.values.partnership.description")}
               </p>
             </div>
             <div className="bg-surface-container-lowest p-gutter rounded-xl border border-outline-variant hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-success-muted rounded-lg flex items-center justify-center mb-stack-md">
-                <span className="material-symbols-outlined text-secondary">
-                  eco
-                </span>
+                <span className="material-symbols-outlined text-secondary">eco</span>
               </div>
               <h3 className="font-headline-md text-headline-md text-primary mb-2">
-                Sustainability
+                {t("about.values.sustainability.title")}
               </h3>
               <p className="font-body-md text-body-md text-on-surface-variant">
-                Committed to ethical sourcing and sustainable logistics to
-                minimize environmental impact across the life sciences sector.
+                {t("about.values.sustainability.description")}
               </p>
             </div>
             <div className="bg-surface-container-lowest p-gutter rounded-xl border border-outline-variant hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-success-muted rounded-lg flex items-center justify-center mb-stack-md">
-                <span className="material-symbols-outlined text-secondary">
-                  insights
-                </span>
+                <span className="material-symbols-outlined text-secondary">insights</span>
               </div>
               <h3 className="font-headline-md text-headline-md text-primary mb-2">
-                Market Intelligence
+                {t("about.values.intelligence.title")}
               </h3>
               <p className="font-body-md text-body-md text-on-surface-variant">
-                Providing our partners with actionable data and market trends to
-                navigate the volatile global trading landscape.
+                {t("about.values.intelligence.description")}
               </p>
             </div>
           </div>
@@ -246,24 +214,23 @@ Aysima Nova Life Sciences
         <div className="max-w-container-max mx-auto px-gutter text-center">
           <div className="bg-background-pure p-stack-lg md:p-24 rounded-3xl shadow-sm border border-outline-variant flex flex-col items-center">
             <h2 className="font-headline-lg text-headline-lg text-primary mb-stack-md">
-              Ready to Optimize Your Supply Chain?
+              {t("about.cta.title")}
             </h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-stack-lg">
-              Connect with our experts today to discuss your procurement needs
-              and how Aysima Nova can streamline your global operations.
+              {t("about.cta.description")}
             </p>
             <div className="flex flex-col md:flex-row gap-stack-md">
               <Link
-                href="/contact"
+                href={`/${locale}/contact`}
                 className="bg-secondary hover:bg-secondary-container text-on-primary px-8 py-4 rounded-lg font-label-lg text-label-lg transition-all shadow-md"
               >
-                Schedule a Consultation
+                {t("about.cta.button1")}
               </Link>
               <Link
-                href="/products"
+                href={`/${locale}/products`}
                 className="border border-primary text-primary hover:bg-primary hover:text-on-primary px-8 py-4 rounded-lg font-label-lg text-label-lg transition-all"
               >
-                View Product Catalog
+                {t("about.cta.button2")}
               </Link>
             </div>
           </div>

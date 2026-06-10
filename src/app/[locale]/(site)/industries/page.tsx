@@ -1,6 +1,14 @@
 import Link from "next/link";
+import { getTranslation } from "@/i18n/server";
 
-export default function IndustriesPage() {
+export default async function IndustriesPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const { t } = await getTranslation(locale);
+
   return (
     <>
       {/* Hero Section */}
@@ -14,12 +22,10 @@ export default function IndustriesPage() {
         </div>
         <div className="relative z-10 max-w-container-max mx-auto px-gutter text-center">
           <h1 className="font-headline-xl text-headline-xl text-white mb-stack-md">
-            Global Industry Solutions
+            {t("industries.hero.title")}
           </h1>
           <p className="font-body-lg text-body-lg text-on-primary-container max-w-2xl mx-auto">
-            Aysima Nova Life Sciences provides precision-driven raw materials
-            and logistics excellence across specialized sectors, ensuring quality
-            compliance and sustainable growth.
+            {t("industries.hero.description")}
           </p>
         </div>
       </section>
@@ -38,18 +44,13 @@ export default function IndustriesPage() {
             </div>
             <div className="p-stack-lg">
               <div className="flex items-center gap-2 mb-2">
-                <span className="material-symbols-outlined text-secondary">
-                  brush
-                </span>
+                <span className="material-symbols-outlined text-secondary">brush</span>
                 <h3 className="font-headline-lg text-headline-lg text-text-primary">
-                  Cosmetics & Personal Care
+                  {t("industries.cosmetics.title")}
                 </h3>
               </div>
               <p className="font-body-md text-body-md text-on-surface-variant mb-stack-md">
-                Elevating beauty standards through high-purity active
-                ingredients, emollients, and specialized preservatives. We
-                support formulation innovation for global skincare and cosmetic
-                brands.
+                {t("industries.cosmetics.description")}
               </p>
             </div>
           </div>
@@ -65,16 +66,13 @@ export default function IndustriesPage() {
             </div>
             <div className="p-stack-lg">
               <div className="flex items-center gap-2 mb-2">
-                <span className="material-symbols-outlined text-secondary">
-                  science
-                </span>
+                <span className="material-symbols-outlined text-secondary">science</span>
                 <h3 className="font-headline-md text-headline-md text-text-primary">
-                  Chemical Raw Materials
+                  {t("industries.chemicals.title")}
                 </h3>
               </div>
               <p className="font-body-md text-body-md text-on-surface-variant">
-                Reliable supply chains for industrial chemicals, solvents, and
-                catalysts essential for large-scale manufacturing.
+                {t("industries.chemicals.description")}
               </p>
             </div>
           </div>
@@ -90,16 +88,13 @@ export default function IndustriesPage() {
             </div>
             <div className="p-stack-lg">
               <div className="flex items-center gap-2 mb-2">
-                <span className="material-symbols-outlined text-secondary">
-                  pill
-                </span>
+                <span className="material-symbols-outlined text-secondary">pill</span>
                 <h3 className="font-headline-md text-headline-md text-text-primary">
-                  Pharmaceutical Ingredients
+                  {t("industries.pharma.title")}
                 </h3>
               </div>
               <p className="font-body-md text-body-md text-on-surface-variant">
-                Sourcing API and excipients under strict GMP standards to ensure
-                safety and efficacy in medicine production.
+                {t("industries.pharma.description")}
               </p>
             </div>
           </div>
@@ -115,16 +110,13 @@ export default function IndustriesPage() {
             </div>
             <div className="p-stack-lg">
               <div className="flex items-center gap-2 mb-2">
-                <span className="material-symbols-outlined text-secondary">
-                  nutrition
-                </span>
+                <span className="material-symbols-outlined text-secondary">nutrition</span>
                 <h3 className="font-headline-md text-headline-md text-text-primary">
-                  Food Supplements
+                  {t("industries.food.title")}
                 </h3>
               </div>
               <p className="font-body-md text-body-md text-on-surface-variant">
-                Premium vitamins, minerals, and herbal extracts for the growing
-                nutraceutical and functional food market.
+                {t("industries.food.description")}
               </p>
             </div>
           </div>
@@ -140,16 +132,13 @@ export default function IndustriesPage() {
             </div>
             <div className="p-stack-lg">
               <div className="flex items-center gap-2 mb-2">
-                <span className="material-symbols-outlined text-secondary">
-                  medical_services
-                </span>
+                <span className="material-symbols-outlined text-secondary">medical_services</span>
                 <h3 className="font-headline-md text-headline-md text-text-primary">
-                  Medical Products
+                  {t("industries.medical.title")}
                 </h3>
               </div>
               <p className="font-body-md text-body-md text-on-surface-variant">
-                Distribution of specialized medical devices, diagnostics, and
-                protective equipment for clinical environments.
+                {t("industries.medical.description")}
               </p>
             </div>
           </div>
@@ -162,44 +151,37 @@ export default function IndustriesPage() {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1">
               <h2 className="font-headline-lg text-headline-lg text-text-primary mb-stack-md">
-                Global Standards & Local Expertise
+                {t("industries.compliance.title")}
               </h2>
               <div className="space-y-stack-md">
                 <div className="flex gap-4">
                   <div className="bg-secondary-container p-2 rounded-lg h-fit">
-                    <span className="material-symbols-outlined text-on-secondary-container">
-                      verified_user
-                    </span>
+                    <span className="material-symbols-outlined text-on-secondary-container">verified_user</span>
                   </div>
                   <div>
                     <h4 className="font-label-lg text-label-lg text-text-primary">
-                      ISO & GMP Compliance
+                      {t("industries.compliance.iso.title")}
                     </h4>
                     <p className="font-body-md text-body-md text-on-surface-variant">
-                      Every industry we serve is backed by rigorous quality
-                      assurance and international certifications.
+                      {t("industries.compliance.iso.description")}
                     </p>
                   </div>
                 </div>
                 <div className="flex gap-4">
                   <div className="bg-secondary-container p-2 rounded-lg h-fit">
-                    <span className="material-symbols-outlined text-on-secondary-container">
-                      public
-                    </span>
+                    <span className="material-symbols-outlined text-on-secondary-container">public</span>
                   </div>
                   <div>
                     <h4 className="font-label-lg text-label-lg text-text-primary">
-                      Logistics Network
+                      {t("industries.compliance.logistics.title")}
                     </h4>
                     <p className="font-body-md text-body-md text-on-surface-variant">
-                      Strategic trade hubs ensuring timely delivery across five
-                      continents for critical supplies.
+                      {t("industries.compliance.logistics.description")}
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -208,18 +190,17 @@ export default function IndustriesPage() {
       <section className="py-section-padding bg-primary text-white">
         <div className="max-w-container-max mx-auto px-gutter text-center">
           <h2 className="font-headline-lg text-headline-lg mb-stack-md">
-            Ready to Optimize Your Supply Chain?
+            {t("industries.cta.title")}
           </h2>
           <p className="font-body-lg text-body-lg text-primary-fixed-dim max-w-xl mx-auto mb-stack-lg">
-            Partner with Aysima Nova for world-class sourcing and industry
-            expertise tailored to your specific needs.
+            {t("industries.cta.description")}
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
-              href="/products"
+              href={`/${locale}/products`}
               className="border border-white/30 text-white px-8 py-3 rounded-lg font-label-lg text-label-lg hover:bg-white/10 transition-all"
             >
-              Download Catalog
+              {t("industries.cta.button")}
             </Link>
           </div>
         </div>

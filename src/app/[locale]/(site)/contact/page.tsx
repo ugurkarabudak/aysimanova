@@ -1,16 +1,23 @@
-export default function ContactPage() {
+import { getTranslation } from "@/i18n/server";
+
+export default async function ContactPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const { t } = await getTranslation(locale);
+
   return (
     <>
       {/* Hero Header */}
       <section className="bg-surface-container-low py-16 px-gutter border-b border-outline-variant/30">
         <div className="max-w-container-max mx-auto">
           <h1 className="font-headline-xl text-headline-xl text-primary mb-4">
-            Contact Our Global Team
+            {t("contact.hero.title")}
           </h1>
           <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-            Whether you are seeking pharmaceutical solutions or global trading
-            partnerships, our experts are ready to assist you from our
-            headquarters in Istanbul.
+            {t("contact.hero.description")}
           </p>
         </div>
       </section>
@@ -22,29 +29,24 @@ export default function ContactPage() {
           <div className="flex flex-col gap-stack-lg">
             <div className="bg-background-pure p-stack-lg rounded-xl shadow-sm border border-outline-variant/50">
               <h2 className="font-headline-lg text-headline-lg text-primary mb-6">
-                Get in Touch
+                {t("contact.getInTouch.title")}
               </h2>
               <p className="font-body-md text-body-md text-on-surface-variant mb-8">
-                Reach out to us directly via email. We typically respond within
-                24 hours.
+                {t("contact.getInTouch.description")}
               </p>
               <div className="space-y-4">
                 <a
                   href="mailto:ugurkarabudak@aysimanova.com"
                   className="flex items-center gap-3 bg-secondary text-on-primary px-8 py-4 rounded-lg font-label-lg text-label-lg hover:opacity-90 active:scale-95 transition-all shadow-lg shadow-secondary/10 w-full justify-center"
                 >
-                  <span className="material-symbols-outlined text-[20px]">
-                    mail
-                  </span>
+                  <span className="material-symbols-outlined text-[20px]">mail</span>
                   ugurkarabudak@aysimanova.com
                 </a>
                 <a
                   href="mailto:info@aysimanova.com"
                   className="flex items-center gap-3 border-2 border-primary text-primary px-8 py-4 rounded-lg font-label-lg text-label-lg hover:bg-primary hover:text-on-primary active:scale-95 transition-all w-full justify-center"
                 >
-                  <span className="material-symbols-outlined text-[20px]">
-                    mail
-                  </span>
+                  <span className="material-symbols-outlined text-[20px]">mail</span>
                   info@aysimanova.com
                 </a>
               </div>
@@ -52,7 +54,7 @@ export default function ContactPage() {
 
             <div className="bg-background-pure p-stack-lg rounded-xl shadow-sm border border-outline-variant/50">
               <h3 className="font-headline-md text-headline-md text-primary mb-4">
-                Other Ways to Reach Us
+                {t("contact.otherWays.title")}
               </h3>
               <div className="space-y-4">
                 <a
@@ -61,36 +63,24 @@ export default function ContactPage() {
                   className="flex items-center gap-3 text-on-surface-variant hover:text-primary transition-colors"
                 >
                   <div className="w-10 h-10 bg-surface flex items-center justify-center rounded-full shrink-0">
-                    <span className="material-symbols-outlined text-secondary">
-                      language
-                    </span>
+                    <span className="material-symbols-outlined text-secondary">language</span>
                   </div>
-                  <span className="font-body-md text-body-md">
-                    www.aysimanova.com
-                  </span>
+                  <span className="font-body-md text-body-md">www.aysimanova.com</span>
                 </a>
                 <a
                   href="tel:+905417136681"
                   className="flex items-center gap-3 text-on-surface-variant hover:text-primary transition-colors"
                 >
                   <div className="w-10 h-10 bg-surface flex items-center justify-center rounded-full shrink-0">
-                    <span className="material-symbols-outlined text-secondary">
-                      phone
-                    </span>
+                    <span className="material-symbols-outlined text-secondary">phone</span>
                   </div>
-                  <span className="font-body-md text-body-md">
-                    +90 541 713 66 81
-                  </span>
+                  <span className="font-body-md text-body-md">+90 541 713 66 81</span>
                 </a>
                 <div className="flex items-center gap-3 text-on-surface-variant">
                   <div className="w-10 h-10 bg-surface flex items-center justify-center rounded-full shrink-0">
-                    <span className="material-symbols-outlined text-secondary">
-                      location_on
-                    </span>
+                    <span className="material-symbols-outlined text-secondary">location_on</span>
                   </div>
-                  <span className="font-body-md text-body-md">
-                    Tuzla / İstanbul, Turkey
-                  </span>
+                  <span className="font-body-md text-body-md">{t("contact.location")}</span>
                 </div>
               </div>
             </div>
@@ -110,31 +100,23 @@ export default function ContactPage() {
                   Uğur Karabudak
                 </h3>
                 <p className="font-label-lg text-label-lg text-secondary mb-4">
-                  Founder & Managing Director
+                  {t("contact.profile.title")}
                 </p>
                 <div className="space-y-2">
                   <a
                     className="flex items-center justify-center md:justify-start gap-2 text-on-surface-variant hover:text-primary transition-colors"
                     href="mailto:ugurkarabudak@aysimanova.com"
                   >
-                    <span className="material-symbols-outlined text-[18px]">
-                      mail
-                    </span>
-                    <span className="font-body-md text-body-md">
-                      ugurkarabudak@aysimanova.com
-                    </span>
+                    <span className="material-symbols-outlined text-[18px]">mail</span>
+                    <span className="font-body-md text-body-md">ugurkarabudak@aysimanova.com</span>
                   </a>
                   <a
                     className="flex items-center justify-center md:justify-start gap-2 text-on-surface-variant hover:text-primary transition-colors"
                     href="https://www.aysimanova.com"
                     target="_blank"
                   >
-                    <span className="material-symbols-outlined text-[18px]">
-                      language
-                    </span>
-                    <span className="font-body-md text-body-md">
-                      www.aysimanova.com
-                    </span>
+                    <span className="material-symbols-outlined text-[18px]">language</span>
+                    <span className="font-body-md text-body-md">www.aysimanova.com</span>
                   </a>
                 </div>
               </div>
@@ -148,10 +130,10 @@ export default function ContactPage() {
                 </span>
                 <div>
                   <h4 className="font-label-lg text-label-lg text-primary">
-                    Headquarters
+                    {t("contact.headquarters")}
                   </h4>
                   <p className="font-body-md text-body-md text-on-surface-variant">
-                    Tuzla / İstanbul, Turkey
+                    {t("contact.location")}
                   </p>
                 </div>
               </div>

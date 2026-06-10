@@ -1,0 +1,374 @@
+{
+  "metadata": {
+    "title": "Aysima Nova | Global Sourcing & Trading in Life Sciences",
+    "description": "Aysima Nova Life Sciences is a global sourcing and trading company operating in cosmetics, personal care, chemicals, pharmaceutical raw materials, food supplements, and medical products."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "founder": "Founder",
+    "industries": "Industries",
+    "products": "Products",
+    "globalTrade": "Global Trade",
+    "contact": "Contact",
+    "getInTouch": "Get in Touch"
+  },
+  "hero": {
+    "slide0": {
+      "title": "Global Sourcing & Trading in Life Sciences"
+    },
+    "slide1": {
+      "title": "Global Sourcing & Trading in Life Sciences",
+      "description": "We connect high-quality raw materials, API's, innovative products, and reliable partners across cosmetics, chemicals, pharma, and food industries.",
+      "subdescription": "Certificate of Analysis, DMF and all quality documents needed in related industries are provided (based on USP, EP, BP pharmacopoeias if necessary).",
+      "cta": "Explore Our Services"
+    },
+    "founderCard": {
+      "title": "Our Founder",
+      "subtitle": "Aysima Nova Life Sciences",
+      "quote": "Science is not only a discipline, but also a responsibility. We build our company on quality, trust, and scientific integrity.",
+      "tags": {
+        "rdExpert": "R&D Expert",
+        "cmcAffairs": "CMC Affairs",
+        "pharmaExec": "Pharma Executive"
+      },
+      "cta": "Read Full Profile"
+    }
+  },
+  "home": {
+    "services": {
+      "label": "Capabilities",
+      "title": "Our Services",
+      "description": "Customized service for each partner — focusing on specific needs and planning related requirements: formulation, optimization, special materials, sourcing and more.",
+      "sourcing": {
+        "title": "Global Sourcing & Trading",
+        "item1": "Raw materials, API's & finished products",
+        "item2": "International supplier network",
+        "item3": "Competitive pricing & logistics"
+      },
+      "importExport": {
+        "title": "Import & Export",
+        "item1": "End-to-end trade operations",
+        "item2": "Documentation & compliance",
+        "item3": "Customs & logistics coordination"
+      },
+      "consultancy": {
+        "title": "Technical Consultancy",
+        "item1": "Product development support",
+        "item2": "Regulatory guidance",
+        "item3": "Quality Assurance guidance",
+        "item4": "Market entry strategies"
+      },
+      "formulation": {
+        "title": "Formulation & R&D",
+        "description": "Helping businesses create innovative and high-quality products through scientific excellence.",
+        "item1": "Product formulation",
+        "item2": "Ingredient optimization",
+        "item3": "Formulation optimization",
+        "item4": "Quality & performance improvement"
+      }
+    },
+    "industries": {
+      "label": "Sectors",
+      "title": "Industries We Serve",
+      "description": "We provide specialized chemical and raw material solutions for diverse vertical markets worldwide.",
+      "cosmetics": "Cosmetics & Personal Care",
+      "chemicals": "Chemical Raw Materials",
+      "pharma": "Pharmaceutical Ingredients",
+      "food": "Food Supplements",
+      "medical": "Medical Products",
+      "cta": "Explore Our Products"
+    },
+    "contact": {
+      "label": "Get in Touch",
+      "title": "Contact",
+      "founderTitle": "Founder & Managing Director",
+      "emailLabel": "Email Address",
+      "locationLabel": "Location",
+      "locationValue": "Tuzla / İstanbul",
+      "websiteLabel": "Official Website",
+      "globalOps": "Global Operations",
+      "globalOpsDesc": "Connecting European and Asian markets through our strategic hub in Istanbul."
+    }
+  },
+  "about": {
+    "hero": {
+      "label": "Bridging Global Markets",
+      "title": "Aysima Nova Life Sciences",
+      "description": "A global sourcing and trading powerhouse operating at the intersection of cosmetics, personal care, chemicals, pharmaceutical raw materials and API's."
+    },
+    "identity": {
+      "label": "Our Identity",
+      "title": "About Us",
+      "subtitle": "We add value with our experiences.",
+      "description": "Aysima Nova Life Sciences — beyond sourcing and trading, we offer technical consultancy based on 20+ years in pharmaceutical sector experiences; helping businesses create innovative and high-quality products.",
+      "badge": "Certified Global Standards"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "Our mission is to build long-term partnerships based on trust, quality, and consistency. We specialize in international procurement, import-export operations, and supply chain management, ensuring that essential products reach global markets with absolute reliability."
+    },
+    "story": {
+      "title": "Precision in Every Procurement",
+      "paragraph1": "Aysima Nova Life Sciences was founded on the principle of scientific precision applied to global logistics. We don't just trade; we curate. Every chemical compound, cosmetic ingredient, and pharmaceutical raw material passes through a rigorous vetting process.",
+      "paragraph2": "Our team of industry experts leverages decades of experience in supply chain management to navigate the complexities of international trade, providing our partners with a seamless path from source to destination.",
+      "stat": "24/7",
+      "statLabel": "Supply Monitoring",
+      "badge": "GMP Approved",
+      "badgeLabel": "Manufacturers"
+    },
+    "values": {
+      "title": "Aysima Nova Life Sciences",
+      "description": "The principles that guide our global operations in the life sciences sector.",
+      "quality": {
+        "title": "Unwavering Quality",
+        "description": "We ensure all pharmaceutical and chemical raw materials meet strict international regulatory standards without compromise."
+      },
+      "global": {
+        "title": "Global Reach, Local Depth",
+        "description": "Our network spans continents, but our knowledge of local regulations and logistics allows for surgical precision in supply chain execution."
+      },
+      "partnership": {
+        "title": "Human Partnership",
+        "description": "Technology drives our efficiency, but trust drives our business. We value the long-term relationships we build with every client."
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "Committed to ethical sourcing and sustainable logistics to minimize environmental impact across the life sciences sector."
+      },
+      "intelligence": {
+        "title": "Market Intelligence",
+        "description": "Providing our partners with actionable data and market trends to navigate the volatile global trading landscape."
+      }
+    },
+    "cta": {
+      "title": "Ready to Optimize Your Supply Chain?",
+      "description": "Connect with our experts today to discuss your procurement needs and how Aysima Nova can streamline your global operations.",
+      "button1": "Schedule a Consultation",
+      "button2": "View Product Catalog"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Our Global Team",
+      "description": "Whether you are seeking pharmaceutical solutions or global trading partnerships, our experts are ready to assist you from our headquarters in Istanbul."
+    },
+    "getInTouch": {
+      "title": "Get in Touch",
+      "description": "Reach out to us directly via email. We typically respond within 24 hours."
+    },
+    "otherWays": {
+      "title": "Other Ways to Reach Us"
+    },
+    "location": "Tuzla / İstanbul, Turkey",
+    "profile": {
+      "title": "Founder & Managing Director"
+    },
+    "headquarters": "Headquarters"
+  },
+  "founder": {
+    "hero": {
+      "label": "Leadership",
+      "title": "Meet Our Founder",
+      "description": "A chemist and executive who built Aysima Nova on decades of pharmaceutical industry leadership."
+    },
+    "sidebar": {
+      "role": "Founder",
+      "company": "Aysima Nova Life Sciences",
+      "educationLabel": "Education",
+      "educationValue": "Chemistry, Sakarya University (2003)",
+      "foundedLabel": "Founded",
+      "foundedValue": "Aysima Nova Life Sciences, May 2026",
+      "expertiseLabel": "Expertise",
+      "expertiseValue": "Pharmaceutical R&D, CMC, Quality",
+      "tags": ["R&D Management", "Analytical Chemistry", "Method Validation", "Stability Studies", "CMC Affairs", "Quality Control"]
+    },
+    "profile": {
+      "title": "Founder Profile",
+      "p1": "Graduated from the Chemistry Department of the Faculty of Science and Letters at Sakarya University in 2003, the founder began her professional career within the R&D departments of leading global and domestic pharmaceutical companies.",
+      "p2": "Throughout her career, she specialized in analytical method development, method validation, stability studies, R&D management, and CMC regulatory affairs. Over the years, she held senior leadership positions including R&D Manager, R&D & Quality Control Manager, Qualified Person, and Factory Manager.",
+      "p3": "With extensive experience in the pharmaceutical and chemical industries, she established Aysima Nova in May 2026 to combine scientific excellence, quality-driven management, and a sustainable business vision under her own corporate philosophy.",
+      "p4": "Today, the company operates with a strong commitment to quality, reliability, innovation, and scientific integrity."
+    },
+    "career": {
+      "rdManager": "R&D Manager",
+      "qualifiedPerson": "Qualified Person",
+      "factoryManager": "Factory Manager",
+      "qcManager": "QC Manager"
+    },
+    "message": {
+      "title": "Founder's Message",
+      "p1": "At Aysima Nova, we believe that science is not only a discipline, but also a responsibility.",
+      "p2": "After many years of experience within the pharmaceutical and chemical industries — from laboratory operations to executive management — I founded this company with a clear vision: to build a structure grounded in quality, trust, sustainability, and scientific integrity.",
+      "p3": "Our goal is to create long-term value through reliable products, strong business partnerships, and a continuous commitment to innovation.",
+      "p4": "We are dedicated to contributing to the industry with professionalism, ethical standards, and a passion for science.",
+      "p5": "Thank you for being part of our journey."
+    }
+  },
+  "globalTrade": {
+    "hero": {
+      "label": "Strategic Sourcing",
+      "title": "Mastering the Flow of Global Commerce",
+      "description": "Aysima Nova bridges continents, connecting high-demand markets with reliable supply chains through precision documentation and expert customs handling."
+    },
+    "network": {
+      "title": "Our Global Reach",
+      "description": "Operating across 45 countries, we manage complex logistics ecosystems to ensure your cargo arrives on time, every time.",
+      "hubs": "45+ Trading Hubs",
+      "hubsDesc": "Strategic presence in key economic zones across Asia, Europe, and the Americas.",
+      "warehousing": "Warehousing",
+      "warehousingDesc": "Temperature-controlled storage solutions for life science products.",
+      "compliance": "Compliance",
+      "complianceDesc": "Full documentation and customs clearance for frictionless trade."
+    },
+    "services": {
+      "title": "End-to-End Trade Services",
+      "description": "We don't just move goods; we engineer commercial success through precision-focused supply chain management.",
+      "importExport": {
+        "title": "Import & Export",
+        "description": "Navigating international borders with a specialized focus on pharmaceuticals and high-tech biological materials.",
+        "item1": "End-to-end management",
+        "item2": "Duty optimization",
+        "item3": "Door-to-door delivery"
+      },
+      "sourcing": {
+        "title": "Global Sourcing",
+        "description": "Leveraging our verified network of international suppliers to secure competitive pricing for critical ingredients.",
+        "item1": "Quality assurance audits",
+        "item2": "Pricing negotiation",
+        "item3": "Ethical vetting"
+      },
+      "documentation": {
+        "title": "Trade Documentation",
+        "description": "Managing the complex web of certificates, licenses, and permits required for high-compliance international trade.",
+        "item1": "Certificate of Origin",
+        "item2": "Phyto-sanitary papers",
+        "item3": "Customs declarations"
+      }
+    },
+    "cta": {
+      "title": "Ready to scale your global operations?",
+      "description": "Partner with Aysima Nova to eliminate the friction from your international supply chain. Our experts are ready to audit your current trade flows.",
+      "button": "Schedule a Consultation"
+    }
+  },
+  "industries": {
+    "hero": {
+      "title": "Global Industry Solutions",
+      "description": "Aysima Nova Life Sciences provides precision-driven raw materials and logistics excellence across specialized sectors, ensuring quality compliance and sustainable growth."
+    },
+    "cosmetics": {
+      "title": "Cosmetics & Personal Care",
+      "description": "Elevating beauty standards through high-purity active ingredients, emollients, and specialized preservatives. We support formulation innovation for global skincare and cosmetic brands."
+    },
+    "chemicals": {
+      "title": "Chemical Raw Materials",
+      "description": "Reliable supply chains for industrial chemicals, solvents, and catalysts essential for large-scale manufacturing."
+    },
+    "pharma": {
+      "title": "Pharmaceutical Ingredients",
+      "description": "Sourcing API and excipients under strict GMP standards to ensure safety and efficacy in medicine production."
+    },
+    "food": {
+      "title": "Food Supplements",
+      "description": "Premium vitamins, minerals, and herbal extracts for the growing nutraceutical and functional food market."
+    },
+    "medical": {
+      "title": "Medical Products",
+      "description": "Distribution of specialized medical devices, diagnostics, and protective equipment for clinical environments."
+    },
+    "compliance": {
+      "title": "Global Standards & Local Expertise",
+      "iso": {
+        "title": "ISO & GMP Compliance",
+        "description": "Every industry we serve is backed by rigorous quality assurance and international certifications."
+      },
+      "logistics": {
+        "title": "Logistics Network",
+        "description": "Strategic trade hubs ensuring timely delivery across five continents for critical supplies."
+      }
+    },
+    "cta": {
+      "title": "Ready to Optimize Your Supply Chain?",
+      "description": "Partner with Aysima Nova for world-class sourcing and industry expertise tailored to your specific needs.",
+      "button": "Download Catalog"
+    }
+  },
+  "products": {
+    "hero": {
+      "label": "Global Life Sciences Catalog",
+      "title": "Advanced Solutions for Modern Science",
+      "description": "Explore our curated selection of high-purity raw materials, API's and pharma grade products, cosmetical materials and food supplements engineered for the highest standards of safety and efficacy."
+    },
+    "section": {
+      "title": "Products"
+    },
+    "empty": {
+      "title": "Products Coming Soon",
+      "description": "Our product catalog is being prepared. Please check back soon or contact us for specific inquiries.",
+      "cta": "Contact Us"
+    },
+    "compliance": {
+      "iso": "ISO 9001:2015",
+      "isoDesc": "Quality Management Certified",
+      "global": "Global Reach",
+      "globalDesc": "Distribution in 45+ Countries",
+      "lab": "Lab Tested",
+      "labDesc": "Internal Purity Verification",
+      "dossier": "Full Dossier",
+      "dossierDesc": "Complete Regulatory Support"
+    },
+    "badge": {
+      "inStock": "In Stock",
+      "newArrival": "New Arrival",
+      "bestSeller": "Best Seller"
+    },
+    "search": {
+      "placeholder": "Search products..."
+    },
+    "filter": {
+      "all": "All"
+    },
+    "results": {
+      "count_one": "{{count}} product found",
+      "count_other": "{{count}} products found",
+      "inCategory": "in {{category}}",
+      "matchingSearch": "matching \"{{search}}\"",
+      "empty": "No products found",
+      "emptyHint": "Try adjusting your search or filter criteria.",
+      "clearFilters": "Clear all filters"
+    },
+    "cta": {
+      "description": "Don't see what you're looking for? We offer custom sourcing and manufacturing services.",
+      "button": "Contact Procurement Team"
+    },
+    "card": {
+      "requestQuote": "Request Quote"
+    }
+  },
+  "footer": {
+    "brand": "Aysima Nova",
+    "description": "Your trusted partner in life sciences, providing high-quality raw materials and global trading solutions.",
+    "quickLinks": {
+      "title": "Quick Links",
+      "about": "About Us",
+      "industries": "Industries",
+      "products": "Products",
+      "globalTrade": "Global Trade",
+      "contact": "Contact"
+    },
+    "services": {
+      "title": "Services",
+      "sourcing": "Global Sourcing",
+      "importExport": "Import & Export",
+      "techSupport": "Technical Support",
+      "rdConsulting": "R&D Consulting"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "location": "Tuzla / İstanbul, Turkey"
+    },
+    "copyright": "© AYSİMA NOVA LİFE SCİENCES KİMYA VE DIŞ TİCARET LİMİTED ŞİRKETİ. All rights reserved.",
+    "tagline": "Global Excellence in Sourcing"
+  }
+}
