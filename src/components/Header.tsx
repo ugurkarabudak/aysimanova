@@ -107,7 +107,7 @@ export default function Header({ lng }: { lng: string }) {
             className="hidden md:flex items-center gap-1.5 bg-secondary text-white text-[13px] font-semibold px-5 py-2.5 rounded-lg hover:bg-secondary/90 active:scale-95 transition-all duration-200"
           >
             {t("nav.getInTouch")}
-            <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+            <span translate="no" className="material-symbols-outlined text-[16px]">arrow_forward</span>
           </Link>
 
           <button
@@ -164,7 +164,7 @@ export default function Header({ lng }: { lng: string }) {
             className="mt-2 flex items-center justify-center gap-2 bg-secondary text-white text-[14px] font-semibold px-5 py-3 rounded-lg active:scale-95 transition-all"
           >
             {t("nav.getInTouch")}
-            <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+            <span translate="no" className="material-symbols-outlined text-[16px]">arrow_forward</span>
           </Link>
           {/* Mobile language toggle */}
           <div className="mt-2 flex items-center justify-center gap-2 py-2 border-t border-outline-variant/30">

@@ -47,7 +47,7 @@ export default async function Founder({
             <div className="lg:col-span-4">
               <div className="bg-surface-container-low rounded-2xl p-8 border border-outline-variant sticky top-28">
                 <div className="w-20 h-20 bg-primary-container rounded-2xl flex items-center justify-center mb-6">
-                  <span className="material-symbols-outlined text-4xl text-secondary-fixed">person</span>
+                  <span translate="no" className="material-symbols-outlined text-4xl text-secondary-fixed">person</span>
                 </div>
                 <h2 className="font-headline-md text-headline-md text-primary mb-1">
                   {t("founder.sidebar.role")}
@@ -58,7 +58,7 @@ export default async function Founder({
 
                 <div className="space-y-4 border-t border-outline-variant pt-6">
                   <div className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5">school</span>
+                    <span translate="no" className="material-symbols-outlined text-secondary text-[20px] mt-0.5">school</span>
                     <div>
                       <p className="font-label-sm text-label-sm text-outline uppercase tracking-wider mb-0.5">
                         {t("founder.sidebar.educationLabel")}
@@ -69,7 +69,7 @@ export default async function Founder({
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5">business_center</span>
+                    <span translate="no" className="material-symbols-outlined text-secondary text-[20px] mt-0.5">business_center</span>
                     <div>
                       <p className="font-label-sm text-label-sm text-outline uppercase tracking-wider mb-0.5">
                         {t("founder.sidebar.foundedLabel")}
@@ -80,7 +80,7 @@ export default async function Founder({
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5">science</span>
+                    <span translate="no" className="material-symbols-outlined text-secondary text-[20px] mt-0.5">science</span>
                     <div>
                       <p className="font-label-sm text-label-sm text-outline uppercase tracking-wider mb-0.5">
                         {t("founder.sidebar.expertiseLabel")}
@@ -131,7 +131,7 @@ export default async function Founder({
                     key={role.key}
                     className="bg-surface-container-low rounded-xl p-5 border border-outline-variant text-center"
                   >
-                    <span className="material-symbols-outlined text-secondary text-3xl mb-2 block">
+                    <span translate="no" className="material-symbols-outlined text-secondary text-3xl mb-2 block">
                       {role.icon}
                     </span>
                     <p className="font-label-lg text-label-lg text-primary">

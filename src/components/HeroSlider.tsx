@@ -90,7 +90,7 @@ export default function HeroSlider({ lng }: { lng: string }) {
                 className="inline-flex items-center gap-2 bg-secondary text-on-secondary px-8 py-4 rounded-lg font-label-lg text-label-lg hover:brightness-90 transition-all"
               >
                 {t("hero.slide1.cta")}
-                <span className="material-symbols-outlined">arrow_forward</span>
+                <span translate="no" className="material-symbols-outlined">arrow_forward</span>
               </Link>
             </div>
 
@@ -98,7 +98,7 @@ export default function HeroSlider({ lng }: { lng: string }) {
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 max-w-sm w-full">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-14 h-14 bg-secondary/20 border border-secondary/40 rounded-xl flex items-center justify-center shrink-0">
-                    <span className="material-symbols-outlined text-secondary-fixed text-3xl">
+                    <span translate="no" className="material-symbols-outlined text-secondary-fixed text-3xl">
                       person
                     </span>
                   </div>
@@ -129,7 +129,7 @@ export default function HeroSlider({ lng }: { lng: string }) {
                   className="flex items-center justify-center gap-2 w-full bg-secondary/80 hover:bg-secondary text-on-secondary py-3 rounded-xl font-label-lg text-label-lg transition-all"
                 >
                   {t("hero.founderCard.cta")}
-                  <span className="material-symbols-outlined text-[16px]">
+                  <span translate="no" className="material-symbols-outlined text-[16px]">
                     arrow_forward
                   </span>
                 </Link>

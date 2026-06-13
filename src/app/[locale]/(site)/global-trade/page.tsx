@@ -68,7 +68,7 @@ export default async function GlobalTradePage({
             </div>
             <div className="md:col-span-4 bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-between">
               <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center">
-                <span className="material-symbols-outlined text-secondary text-3xl">inventory_2</span>
+                <span translate="no" className="material-symbols-outlined text-secondary text-3xl">inventory_2</span>
               </div>
               <div>
                 <h3 className="font-headline-md text-headline-md mb-2">
@@ -81,7 +81,7 @@ export default async function GlobalTradePage({
             </div>
             <div className="md:col-span-4 bg-secondary-container text-on-secondary-container rounded-xl p-8 flex flex-col justify-between border border-secondary/20">
               <div className="w-12 h-12 bg-white/50 rounded-lg flex items-center justify-center">
-                <span className="material-symbols-outlined text-secondary text-3xl">verified_user</span>
+                <span translate="no" className="material-symbols-outlined text-secondary text-3xl">verified_user</span>
               </div>
               <div>
                 <h3 className="font-headline-md text-headline-md mb-2">
@@ -133,7 +133,7 @@ export default async function GlobalTradePage({
                 key={key}
                 className="group bg-white p-8 border border-outline-variant rounded-xl hover:shadow-lg transition-all duration-300"
               >
-                <span className="material-symbols-outlined text-4xl text-secondary mb-6">{icon}</span>
+                <span translate="no" className="material-symbols-outlined text-4xl text-secondary mb-6">{icon}</span>
                 <h4 className="font-headline-md text-headline-md text-primary mb-3">
                   {t(`globalTrade.services.${key}.title`)}
                 </h4>
@@ -143,7 +143,7 @@ export default async function GlobalTradePage({
                 <ul className="space-y-3 mb-8">
                   {items.map((item) => (
                     <li key={item} className="flex items-center gap-2 font-label-lg text-label-lg text-on-surface">
-                      <span className="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                      <span translate="no" className="material-symbols-outlined text-secondary text-sm">check_circle</span>
                       {t(`globalTrade.services.${key}.${item}`)}
                     </li>
                   ))}

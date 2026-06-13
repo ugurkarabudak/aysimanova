@@ -31,77 +31,77 @@ export default async function Home({
           <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-gutter">
             <div className="md:col-span-3 lg:col-span-4 bg-background-pure p-8 rounded-xl border border-outline-variant hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-success-muted flex items-center justify-center rounded-lg mb-6">
-                <span className="material-symbols-outlined text-secondary">inventory_2</span>
+                <span translate="no" className="material-symbols-outlined text-secondary">inventory_2</span>
               </div>
               <h3 className="font-headline-md text-headline-md mb-4 text-primary">
                 {t("home.services.sourcing.title")}
               </h3>
               <ul className="space-y-3 text-on-surface-variant font-label-lg">
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                  <span translate="no" className="material-symbols-outlined text-secondary text-sm">check_circle</span>
                   {t("home.services.sourcing.item1")}
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                  <span translate="no" className="material-symbols-outlined text-secondary text-sm">check_circle</span>
                   {t("home.services.sourcing.item2")}
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                  <span translate="no" className="material-symbols-outlined text-secondary text-sm">check_circle</span>
                   {t("home.services.sourcing.item3")}
                 </li>
               </ul>
             </div>
             <div className="md:col-span-3 lg:col-span-4 bg-background-pure p-8 rounded-xl border border-outline-variant hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-success-muted flex items-center justify-center rounded-lg mb-6">
-                <span className="material-symbols-outlined text-secondary">import_export</span>
+                <span translate="no" className="material-symbols-outlined text-secondary">import_export</span>
               </div>
               <h3 className="font-headline-md text-headline-md mb-4 text-primary">
                 {t("home.services.importExport.title")}
               </h3>
               <ul className="space-y-3 text-on-surface-variant font-label-lg">
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                  <span translate="no" className="material-symbols-outlined text-secondary text-sm">check_circle</span>
                   {t("home.services.importExport.item1")}
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                  <span translate="no" className="material-symbols-outlined text-secondary text-sm">check_circle</span>
                   {t("home.services.importExport.item2")}
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                  <span translate="no" className="material-symbols-outlined text-secondary text-sm">check_circle</span>
                   {t("home.services.importExport.item3")}
                 </li>
               </ul>
             </div>
             <div className="md:col-span-3 lg:col-span-4 bg-background-pure p-8 rounded-xl border border-outline-variant hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-success-muted flex items-center justify-center rounded-lg mb-6">
-                <span className="material-symbols-outlined text-secondary">hub</span>
+                <span translate="no" className="material-symbols-outlined text-secondary">hub</span>
               </div>
               <h3 className="font-headline-md text-headline-md mb-4 text-primary">
                 {t("home.services.consultancy.title")}
               </h3>
               <ul className="space-y-3 text-on-surface-variant font-label-lg">
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                  <span translate="no" className="material-symbols-outlined text-secondary text-sm">check_circle</span>
                   {t("home.services.consultancy.item1")}
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                  <span translate="no" className="material-symbols-outlined text-secondary text-sm">check_circle</span>
                   {t("home.services.consultancy.item2")}
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                  <span translate="no" className="material-symbols-outlined text-secondary text-sm">check_circle</span>
                   {t("home.services.consultancy.item3")}
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                  <span translate="no" className="material-symbols-outlined text-secondary text-sm">check_circle</span>
                   {t("home.services.consultancy.item4")}
                 </li>
               </ul>
             </div>
             <div className="md:col-span-6 lg:col-span-12 bg-primary-container p-8 rounded-xl flex flex-col md:flex-row items-center gap-8 text-on-primary">
               <div className="w-20 h-20 bg-primary flex items-center justify-center rounded-2xl shrink-0">
-                <span className="material-symbols-outlined text-secondary text-5xl">biotech</span>
+                <span translate="no" className="material-symbols-outlined text-secondary text-5xl">biotech</span>
               </div>
               <div className="flex-grow">
                 <h3 className="font-headline-md text-headline-md mb-2">
@@ -113,7 +113,7 @@ export default async function Home({
                 <div className="flex flex-wrap gap-6">
                   {(["item1", "item2", "item3", "item4"] as const).map((key) => (
                     <span key={key} className="flex items-center gap-2">
-                      <span className="material-symbols-outlined text-secondary">done</span>
+                      <span translate="no" className="material-symbols-outlined text-secondary">done</span>
                       {t(`home.services.formulation.${key}`)}
                     </span>
                   ))}
@@ -157,7 +157,7 @@ export default async function Home({
                   src={src}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent flex flex-col justify-end p-6">
-                  <span className="material-symbols-outlined text-on-primary mb-2">{icon}</span>
+                  <span translate="no" className="material-symbols-outlined text-on-primary mb-2">{icon}</span>
                   <h4 className="font-label-lg text-label-lg text-on-primary">
                     {t(`home.industries.${key}`)}
                   </h4>
@@ -171,7 +171,7 @@ export default async function Home({
               className="inline-flex items-center gap-2 bg-secondary text-on-secondary px-8 py-4 rounded-lg font-label-lg text-label-lg hover:brightness-90 transition-all"
             >
               {t("home.industries.cta")}
-              <span className="material-symbols-outlined">arrow_forward</span>
+              <span translate="no" className="material-symbols-outlined">arrow_forward</span>
             </Link>
           </div>
         </div>
@@ -191,7 +191,7 @@ export default async function Home({
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-surface flex items-center justify-center rounded-full shrink-0">
-                    <span className="material-symbols-outlined text-secondary">person</span>
+                    <span translate="no" className="material-symbols-outlined text-secondary">person</span>
                   </div>
                   <div>
                     <h4 className="font-label-lg text-label-lg text-outline uppercase tracking-wider mb-1">
@@ -204,7 +204,7 @@ export default async function Home({
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-surface flex items-center justify-center rounded-full shrink-0">
-                    <span className="material-symbols-outlined text-secondary">mail</span>
+                    <span translate="no" className="material-symbols-outlined text-secondary">mail</span>
                   </div>
                   <div>
                     <h4 className="font-label-lg text-label-lg text-outline uppercase tracking-wider mb-1">
@@ -226,7 +226,7 @@ export default async function Home({
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-surface flex items-center justify-center rounded-full shrink-0">
-                    <span className="material-symbols-outlined text-secondary">location_on</span>
+                    <span translate="no" className="material-symbols-outlined text-secondary">location_on</span>
                   </div>
                   <div>
                     <h4 className="font-label-lg text-label-lg text-outline uppercase tracking-wider mb-1">
@@ -239,7 +239,7 @@ export default async function Home({
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-surface flex items-center justify-center rounded-full shrink-0">
-                    <span className="material-symbols-outlined text-secondary">language</span>
+                    <span translate="no" className="material-symbols-outlined text-secondary">language</span>
                   </div>
                   <div>
                     <h4 className="font-label-lg text-label-lg text-outline uppercase tracking-wider mb-1">
@@ -272,7 +272,7 @@ export default async function Home({
               ></div>
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="bg-background-pure p-6 rounded-xl shadow-2xl border border-secondary/20 max-w-sm text-center">
-                  <span className="material-symbols-outlined text-secondary text-5xl mb-4">
+                  <span translate="no" className="material-symbols-outlined text-secondary text-5xl mb-4">
                     location_searching
                   </span>
                   <h3 className="font-headline-md text-headline-md mb-2">

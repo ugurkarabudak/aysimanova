@@ -82,15 +82,15 @@ export default async function Footer({ lng }: { lng: string }) {
           </h4>
           <div className="space-y-3">
             <div className="flex items-center gap-2 text-surface-variant">
-              <span className="material-symbols-outlined text-label-lg">mail</span>
+              <span translate="no" className="material-symbols-outlined text-label-lg">mail</span>
               <span className="font-body-md">ugurkarabudak@aysimanova.com</span>
             </div>
             <div className="flex items-center gap-2 text-surface-variant">
-              <span className="material-symbols-outlined text-label-lg">location_on</span>
+              <span translate="no" className="material-symbols-outlined text-label-lg">location_on</span>
               <span className="font-body-md">{t("footer.contact.location")}</span>
             </div>
             <div className="flex items-center gap-2 text-surface-variant">
-              <span className="material-symbols-outlined text-label-lg">language</span>
+              <span translate="no" className="material-symbols-outlined text-label-lg">language</span>
               <a
                 href="https://www.aysimanova.com"
                 className="font-body-md hover:text-secondary-fixed transition-colors"
@@ -110,7 +110,7 @@ export default async function Footer({ lng }: { lng: string }) {
             </p>
           </div>
           <div className="flex items-center gap-2 font-label-sm text-label-sm text-surface-variant">
-            <span className="material-symbols-outlined text-xs">public</span>
+            <span translate="no" className="material-symbols-outlined text-xs">public</span>
             {t("footer.tagline")}
           </div>
         </div>

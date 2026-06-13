@@ -44,7 +44,7 @@ export default async function IndustriesPage({
             </div>
             <div className="p-stack-lg">
               <div className="flex items-center gap-2 mb-2">
-                <span className="material-symbols-outlined text-secondary">brush</span>
+                <span translate="no" className="material-symbols-outlined text-secondary">brush</span>
                 <h3 className="font-headline-lg text-headline-lg text-text-primary">
                   {t("industries.cosmetics.title")}
                 </h3>
@@ -66,7 +66,7 @@ export default async function IndustriesPage({
             </div>
             <div className="p-stack-lg">
               <div className="flex items-center gap-2 mb-2">
-                <span className="material-symbols-outlined text-secondary">science</span>
+                <span translate="no" className="material-symbols-outlined text-secondary">science</span>
                 <h3 className="font-headline-md text-headline-md text-text-primary">
                   {t("industries.chemicals.title")}
                 </h3>
@@ -88,7 +88,7 @@ export default async function IndustriesPage({
             </div>
             <div className="p-stack-lg">
               <div className="flex items-center gap-2 mb-2">
-                <span className="material-symbols-outlined text-secondary">pill</span>
+                <span translate="no" className="material-symbols-outlined text-secondary">pill</span>
                 <h3 className="font-headline-md text-headline-md text-text-primary">
                   {t("industries.pharma.title")}
                 </h3>
@@ -110,7 +110,7 @@ export default async function IndustriesPage({
             </div>
             <div className="p-stack-lg">
               <div className="flex items-center gap-2 mb-2">
-                <span className="material-symbols-outlined text-secondary">nutrition</span>
+                <span translate="no" className="material-symbols-outlined text-secondary">nutrition</span>
                 <h3 className="font-headline-md text-headline-md text-text-primary">
                   {t("industries.food.title")}
                 </h3>
@@ -132,7 +132,7 @@ export default async function IndustriesPage({
             </div>
             <div className="p-stack-lg">
               <div className="flex items-center gap-2 mb-2">
-                <span className="material-symbols-outlined text-secondary">medical_services</span>
+                <span translate="no" className="material-symbols-outlined text-secondary">medical_services</span>
                 <h3 className="font-headline-md text-headline-md text-text-primary">
                   {t("industries.medical.title")}
                 </h3>
@@ -156,7 +156,7 @@ export default async function IndustriesPage({
               <div className="space-y-stack-md">
                 <div className="flex gap-4">
                   <div className="bg-secondary-container p-2 rounded-lg h-fit">
-                    <span className="material-symbols-outlined text-on-secondary-container">verified_user</span>
+                    <span translate="no" className="material-symbols-outlined text-on-secondary-container">verified_user</span>
                   </div>
                   <div>
                     <h4 className="font-label-lg text-label-lg text-text-primary">
@@ -169,7 +169,7 @@ export default async function IndustriesPage({
                 </div>
                 <div className="flex gap-4">
                   <div className="bg-secondary-container p-2 rounded-lg h-fit">
-                    <span className="material-symbols-outlined text-on-secondary-container">public</span>
+                    <span translate="no" className="material-symbols-outlined text-on-secondary-container">public</span>
                   </div>
                   <div>
                     <h4 className="font-label-lg text-label-lg text-text-primary">

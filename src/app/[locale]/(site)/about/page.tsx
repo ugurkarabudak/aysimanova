@@ -63,7 +63,7 @@ export default async function AboutPage({
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-secondary p-8 rounded-xl text-on-secondary hidden md:block">
-                <span className="material-symbols-outlined text-4xl block mb-2">workspace_premium</span>
+                <span translate="no" className="material-symbols-outlined text-4xl block mb-2">workspace_premium</span>
                 <p className="font-label-lg text-label-lg">{t("about.identity.badge")}</p>
               </div>
             </div>
@@ -75,7 +75,7 @@ export default async function AboutPage({
       <section className="py-section-padding bg-surface-container-lowest">
         <div className="max-w-container-max mx-auto px-gutter">
           <div className="max-w-3xl mx-auto text-center space-y-stack-md">
-            <span className="material-symbols-outlined text-secondary text-5xl">handshake</span>
+            <span translate="no" className="material-symbols-outlined text-secondary text-5xl">handshake</span>
             <h2 className="font-headline-lg text-headline-lg text-primary">
               {t("about.mission.title")}
             </h2>
@@ -145,7 +145,7 @@ export default async function AboutPage({
           <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
             <div className="bg-surface-container-lowest p-gutter rounded-xl border border-outline-variant hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-success-muted rounded-lg flex items-center justify-center mb-stack-md">
-                <span className="material-symbols-outlined text-secondary">verified_user</span>
+                <span translate="no" className="material-symbols-outlined text-secondary">verified_user</span>
               </div>
               <h3 className="font-headline-md text-headline-md text-primary mb-2">
                 {t("about.values.quality.title")}
@@ -157,7 +157,7 @@ export default async function AboutPage({
             <div className="bg-primary-container p-gutter rounded-xl md:col-span-1 md:row-span-2 flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mb-stack-md">
-                  <span className="material-symbols-outlined text-secondary-fixed">language</span>
+                  <span translate="no" className="material-symbols-outlined text-secondary-fixed">language</span>
                 </div>
                 <h3 className="font-headline-md text-headline-md text-on-primary mb-4">
                   {t("about.values.global.title")}
@@ -174,7 +174,7 @@ export default async function AboutPage({
             </div>
             <div className="bg-surface-container-lowest p-gutter rounded-xl border border-outline-variant hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-success-muted rounded-lg flex items-center justify-center mb-stack-md">
-                <span className="material-symbols-outlined text-secondary">groups</span>
+                <span translate="no" className="material-symbols-outlined text-secondary">groups</span>
               </div>
               <h3 className="font-headline-md text-headline-md text-primary mb-2">
                 {t("about.values.partnership.title")}
@@ -185,7 +185,7 @@ export default async function AboutPage({
             </div>
             <div className="bg-surface-container-lowest p-gutter rounded-xl border border-outline-variant hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-success-muted rounded-lg flex items-center justify-center mb-stack-md">
-                <span className="material-symbols-outlined text-secondary">eco</span>
+                <span translate="no" className="material-symbols-outlined text-secondary">eco</span>
               </div>
               <h3 className="font-headline-md text-headline-md text-primary mb-2">
                 {t("about.values.sustainability.title")}
@@ -196,7 +196,7 @@ export default async function AboutPage({
             </div>
             <div className="bg-surface-container-lowest p-gutter rounded-xl border border-outline-variant hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-success-muted rounded-lg flex items-center justify-center mb-stack-md">
-                <span className="material-symbols-outlined text-secondary">insights</span>
+                <span translate="no" className="material-symbols-outlined text-secondary">insights</span>
               </div>
               <h3 className="font-headline-md text-headline-md text-primary mb-2">
                 {t("about.values.intelligence.title")}

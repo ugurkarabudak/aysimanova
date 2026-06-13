@@ -71,7 +71,7 @@ export default function ProductsGrid({
       <div className="mb-10 flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
         {/* Search input */}
         <div className="relative w-full md:max-w-md">
-          <span className="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">
+          <span translate="no" className="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">
             search
           </span>
           <input
@@ -86,7 +86,7 @@ export default function ProductsGrid({
               onClick={() => setSearch("")}
               className="absolute right-3 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface"
             >
-              <span className="material-symbols-outlined text-[18px]">close</span>
+              <span translate="no" className="material-symbols-outlined text-[18px]">close</span>
             </button>
           )}
         </div>
@@ -131,7 +131,7 @@ export default function ProductsGrid({
         </div>
       ) : (
         <div className="text-center py-20 bg-surface-container-low rounded-2xl">
-          <span className="material-symbols-outlined text-6xl text-outline/40 mb-4 block">
+          <span translate="no" className="material-symbols-outlined text-6xl text-outline/40 mb-4 block">
             inventory_2
           </span>
           <h3 className="font-headline-md text-headline-md text-primary mb-2">
@@ -192,7 +192,7 @@ function ProductCard({
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center">
-            <span className="material-symbols-outlined text-6xl text-outline/30">
+            <span translate="no" className="material-symbols-outlined text-6xl text-outline/30">
               science
             </span>
           </div>

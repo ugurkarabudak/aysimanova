@@ -122,6 +122,10 @@
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
+.material-symbols-outlined::before,
+.material-symbols-outlined::after {
+  translate: none;
+}
 
 .hero-gradient {
   background: linear-gradient(135deg, rgba(0, 31, 63, 0.92) 0%, rgba(0, 6, 19, 0.85) 100%);

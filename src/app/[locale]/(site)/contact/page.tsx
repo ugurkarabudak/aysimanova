@@ -39,14 +39,14 @@ export default async function ContactPage({
                   href="mailto:ugurkarabudak@aysimanova.com"
                   className="flex items-center gap-3 bg-secondary text-on-primary px-8 py-4 rounded-lg font-label-lg text-label-lg hover:opacity-90 active:scale-95 transition-all shadow-lg shadow-secondary/10 w-full justify-center"
                 >
-                  <span className="material-symbols-outlined text-[20px]">mail</span>
+                  <span translate="no" className="material-symbols-outlined text-[20px]">mail</span>
                   ugurkarabudak@aysimanova.com
                 </a>
                 <a
                   href="mailto:info@aysimanova.com"
                   className="flex items-center gap-3 border-2 border-primary text-primary px-8 py-4 rounded-lg font-label-lg text-label-lg hover:bg-primary hover:text-on-primary active:scale-95 transition-all w-full justify-center"
                 >
-                  <span className="material-symbols-outlined text-[20px]">mail</span>
+                  <span translate="no" className="material-symbols-outlined text-[20px]">mail</span>
                   info@aysimanova.com
                 </a>
               </div>
@@ -63,7 +63,7 @@ export default async function ContactPage({
                   className="flex items-center gap-3 text-on-surface-variant hover:text-primary transition-colors"
                 >
                   <div className="w-10 h-10 bg-surface flex items-center justify-center rounded-full shrink-0">
-                    <span className="material-symbols-outlined text-secondary">language</span>
+                    <span translate="no" className="material-symbols-outlined text-secondary">language</span>
                   </div>
                   <span className="font-body-md text-body-md">www.aysimanova.com</span>
                 </a>
@@ -72,13 +72,13 @@ export default async function ContactPage({
                   className="flex items-center gap-3 text-on-surface-variant hover:text-primary transition-colors"
                 >
                   <div className="w-10 h-10 bg-surface flex items-center justify-center rounded-full shrink-0">
-                    <span className="material-symbols-outlined text-secondary">phone</span>
+                    <span translate="no" className="material-symbols-outlined text-secondary">phone</span>
                   </div>
                   <span className="font-body-md text-body-md">+90 541 713 66 81</span>
                 </a>
                 <div className="flex items-center gap-3 text-on-surface-variant">
                   <div className="w-10 h-10 bg-surface flex items-center justify-center rounded-full shrink-0">
-                    <span className="material-symbols-outlined text-secondary">location_on</span>
+                    <span translate="no" className="material-symbols-outlined text-secondary">location_on</span>
                   </div>
                   <span className="font-body-md text-body-md">{t("contact.location")}</span>
                 </div>
@@ -107,7 +107,7 @@ export default async function ContactPage({
                     className="flex items-center justify-center md:justify-start gap-2 text-on-surface-variant hover:text-primary transition-colors"
                     href="mailto:ugurkarabudak@aysimanova.com"
                   >
-                    <span className="material-symbols-outlined text-[18px]">mail</span>
+                    <span translate="no" className="material-symbols-outlined text-[18px]">mail</span>
                     <span className="font-body-md text-body-md">ugurkarabudak@aysimanova.com</span>
                   </a>
                   <a
@@ -115,7 +115,7 @@ export default async function ContactPage({
                     href="https://www.aysimanova.com"
                     target="_blank"
                   >
-                    <span className="material-symbols-outlined text-[18px]">language</span>
+                    <span translate="no" className="material-symbols-outlined text-[18px]">language</span>
                     <span className="font-body-md text-body-md">www.aysimanova.com</span>
                   </a>
                 </div>
@@ -125,7 +125,7 @@ export default async function ContactPage({
             {/* Location & Map */}
             <div className="flex flex-col gap-4">
               <div className="flex items-start gap-3 px-2">
-                <span className="material-symbols-outlined text-secondary text-[24px] mt-1">
+                <span translate="no" className="material-symbols-outlined text-secondary text-[24px] mt-1">
                   location_on
                 </span>
                 <div>
@@ -146,7 +146,7 @@ export default async function ContactPage({
                 <div className="absolute inset-0 flex items-center justify-center bg-primary/10 pointer-events-none">
                   <div className="bg-background-pure p-3 rounded-full shadow-xl">
                     <span
-                      className="material-symbols-outlined text-secondary text-[32px]"
+                      translate="no" className="material-symbols-outlined text-secondary text-[32px]"
                       style={{ fontVariationSettings: "'FILL' 1" }}
                     >
                       push_pin

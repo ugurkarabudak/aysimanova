@@ -59,7 +59,7 @@ export default async function ProductsPage({
             <ProductsGrid products={products} categories={categories} lng={locale} />
           ) : (
             <div className="text-center py-20 bg-surface-container-low rounded-2xl">
-              <span className="material-symbols-outlined text-6xl text-outline/40 mb-4 block">
+              <span translate="no" className="material-symbols-outlined text-6xl text-outline/40 mb-4 block">
                 inventory_2
               </span>
               <h3 className="font-headline-md text-headline-md text-primary mb-2">
@@ -83,22 +83,22 @@ export default async function ProductsPage({
       <section className="bg-primary text-on-primary py-section-padding">
         <div className="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-4 gap-stack-lg text-center">
           <div>
-            <span className="material-symbols-outlined text-4xl mb-4 text-secondary-fixed">verified_user</span>
+            <span translate="no" className="material-symbols-outlined text-4xl mb-4 text-secondary-fixed">verified_user</span>
             <h5 className="font-headline-md text-headline-md">{t("products.compliance.iso")}</h5>
             <p className="font-label-sm text-label-sm opacity-80 mt-2">{t("products.compliance.isoDesc")}</p>
           </div>
           <div>
-            <span className="material-symbols-outlined text-4xl mb-4 text-secondary-fixed">public</span>
+            <span translate="no" className="material-symbols-outlined text-4xl mb-4 text-secondary-fixed">public</span>
             <h5 className="font-headline-md text-headline-md">{t("products.compliance.global")}</h5>
             <p className="font-label-sm text-label-sm opacity-80 mt-2">{t("products.compliance.globalDesc")}</p>
           </div>
           <div>
-            <span className="material-symbols-outlined text-4xl mb-4 text-secondary-fixed">biotech</span>
+            <span translate="no" className="material-symbols-outlined text-4xl mb-4 text-secondary-fixed">biotech</span>
             <h5 className="font-headline-md text-headline-md">{t("products.compliance.lab")}</h5>
             <p className="font-label-sm text-label-sm opacity-80 mt-2">{t("products.compliance.labDesc")}</p>
           </div>
           <div>
-            <span className="material-symbols-outlined text-4xl mb-4 text-secondary-fixed">description</span>
+            <span translate="no" className="material-symbols-outlined text-4xl mb-4 text-secondary-fixed">description</span>
             <h5 className="font-headline-md text-headline-md">{t("products.compliance.dossier")}</h5>
             <p className="font-label-sm text-label-sm opacity-80 mt-2">{t("products.compliance.dossierDesc")}</p>
           </div>
