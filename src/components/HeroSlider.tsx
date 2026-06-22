@@ -97,11 +97,12 @@ export default function HeroSlider({ lng }: { lng: string }) {
             <div className="hidden lg:flex justify-end">
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 max-w-sm w-full">
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="w-14 h-14 bg-secondary/20 border border-secondary/40 rounded-xl flex items-center justify-center shrink-0">
-                    <span translate="no" className="material-symbols-outlined text-secondary-fixed text-3xl">
-                      person
-                    </span>
-                  </div>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/img/1.avif"
+                    alt="Uğur Karabudak"
+                    className="w-24 h-24 rounded-xl object-cover shrink-0 border border-secondary/40"
+                  />
                   <div>
                     <p className="font-headline-md text-headline-md text-on-primary leading-tight">
                       {t("hero.founderCard.title")}

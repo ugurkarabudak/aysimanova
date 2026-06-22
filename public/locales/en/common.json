@@ -110,7 +110,7 @@
     },
     "story": {
       "title": "Precision in Every Procurement",
-      "paragraph1": "Aysima Nova Life Sciences was founded on the principle of scientific precision applied to global logistics. We don't just trade; we curate. Every chemical compound, cosmetic ingredient, and pharmaceutical raw material passes through a rigorous vetting process.",
+      "paragraph1": "Aysima Nova Life Sciences is built on the principle of scientific precision applied to global logistics. Every chemical compound, cosmetic ingredient, food raw material, and pharmaceutical raw material undergoes a rigorous evaluation process. We do not do marketing, we create and deliver value-added products.",
       "paragraph2": "Our team of industry experts leverages decades of experience in supply chain management to navigate the complexities of international trade, providing our partners with a seamless path from source to destination.",
       "stat": "24/7",
       "statLabel": "Supply Monitoring",
@@ -178,16 +178,16 @@
       "educationLabel": "Education",
       "educationValue": "Chemistry, Sakarya University (2003)",
       "foundedLabel": "Founded",
-      "foundedValue": "Aysima Nova Life Sciences, May 2026",
+      "foundedValue": "Aysima Nova Life Sciences, June 2026",
       "expertiseLabel": "Expertise",
-      "expertiseValue": "Pharmaceutical R&D, CMC, Quality",
-      "tags": ["R&D Management", "Analytical Chemistry", "Method Validation", "Stability Studies", "CMC Affairs", "Quality Control"]
+      "expertiseValue": "Pharmaceutical R&D, CMC, Quality, Production",
+      "tags": ["R&D Management", "Analytical Chemistry", "Method Validation", "Stability Studies", "CMC Affairs", "Quality Control", "Production Optimization and Improvement"]
     },
     "profile": {
       "title": "Founder Profile",
       "p1": "Graduated from the Chemistry Department of the Faculty of Science and Letters at Sakarya University in 2003, the founder began her professional career within the R&D departments of leading global and domestic pharmaceutical companies.",
-      "p2": "Throughout her career, she specialized in analytical method development, method validation, stability studies, R&D management, and CMC regulatory affairs. Over the years, she held senior leadership positions including R&D Manager, R&D & Quality Control Manager, Qualified Person, and Factory Manager.",
-      "p3": "With extensive experience in the pharmaceutical and chemical industries, she established Aysima Nova in May 2026 to combine scientific excellence, quality-driven management, and a sustainable business vision under her own corporate philosophy.",
+      "p2": "Throughout her career, she specialized in stability studies, formulation studies, R&D management, regulatory affairs management, production optimization, transfer validation, and factory start-up technical and quality matters. Over the years, she held senior leadership positions including R&D Manager, R&D & Quality Control Manager, Qualified Person, and Factory Manager.",
+      "p3": "With extensive experience in the pharmaceutical and chemical industries, she established Aysima Nova in June 2026 to combine scientific excellence, quality-driven management, and a sustainable business vision under her own corporate philosophy.",
       "p4": "Today, the company operates with a strong commitment to quality, reliability, innovation, and scientific integrity."
     },
     "career": {
@@ -199,7 +199,7 @@
     "message": {
       "title": "Founder's Message",
       "p1": "At Aysima Nova, we believe that science is not only a discipline, but also a responsibility.",
-      "p2": "After many years of experience within the pharmaceutical and chemical industries — from laboratory operations to executive management — I founded this company with a clear vision: to build a structure grounded in quality, trust, sustainability, and scientific integrity.",
+      "p2": "After many years of experiences within the pharmaceutical and chemical industries I founded this company with a clear vision: to build a structure grounded in quality, trust, sustainability, and scientific integrity.",
       "p3": "Our goal is to create long-term value through reliable products, strong business partnerships, and a continuous commitment to innovation.",
       "p4": "We are dedicated to contributing to the industry with professionalism, ethical standards, and a passion for science.",
       "p5": "Thank you for being part of our journey."
@@ -362,7 +362,8 @@
       "sourcing": "Global Sourcing",
       "importExport": "Import & Export",
       "techSupport": "Technical Support",
-      "rdConsulting": "R&D Consulting"
+      "rdConsulting": "R&D Advisory",
+      "sciTechAdvisory": "Scientific & Technical Advisory"
     },
     "contact": {
       "title": "Contact Us",

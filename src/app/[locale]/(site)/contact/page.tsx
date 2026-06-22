@@ -93,7 +93,7 @@ export default async function ContactPage({
               <img
                 alt="Uğur Karabudak"
                 className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-lg shadow-md border-2 border-background-pure"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbne_X0fhIIkXiLs5wL8On3EKRb0iKTtUMIWjssmx_KqBJU7KUHDAvjssbNfcNYleSssO0n17oOPX3y0N2t5CIC_JgsU5HDtLzU6_Rv_2W1dzGzygKiA78XOcS1ZdhmixqUnqgoJTIcxeRN1QeA98EZWVwRz7Mmz8b1fYenRamsdIDAps-sr8etrSQB7kCWsaBpi2D_eQu5CVofDUQfQ6tnokMiFaGIe2XVrQYIULE_WHfiKdIyCllBo4WxJQiYyDA4y4aBd88PUY"
+                src="/img/1.avif"
               />
               <div className="text-center md:text-left pt-2">
                 <h3 className="font-headline-md text-headline-md text-primary">

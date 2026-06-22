@@ -73,6 +73,7 @@ export default async function Footer({ lng }: { lng: string }) {
             <li className="text-surface-variant">{t("footer.services.importExport")}</li>
             <li className="text-surface-variant">{t("footer.services.techSupport")}</li>
             <li className="text-surface-variant">{t("footer.services.rdConsulting")}</li>
+            <li className="text-surface-variant">{t("footer.services.sciTechAdvisory")}</li>
           </ul>
         </div>
 

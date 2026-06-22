@@ -46,9 +46,12 @@ export default async function Founder({
             {/* Sidebar card */}
             <div className="lg:col-span-4">
               <div className="bg-surface-container-low rounded-2xl p-8 border border-outline-variant sticky top-28">
-                <div className="w-20 h-20 bg-primary-container rounded-2xl flex items-center justify-center mb-6">
-                  <span translate="no" className="material-symbols-outlined text-4xl text-secondary-fixed">person</span>
-                </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/img/2.avif"
+                  alt="Uğur Karabudak"
+                  className="w-full aspect-square rounded-xl object-cover object-top mb-6"
+                />
                 <h2 className="font-headline-md text-headline-md text-primary mb-1">
                   {t("founder.sidebar.role")}
                 </h2>
@@ -142,27 +145,37 @@ export default async function Founder({
               </div>
 
               {/* Message */}
-              <div className="bg-primary-container rounded-2xl p-10 relative overflow-hidden">
-                <div
-                  className="absolute top-0 right-0 w-48 h-48 opacity-5"
-                  style={{ backgroundImage: "radial-gradient(#ffffff 1px, transparent 1px)", backgroundSize: "20px 20px" }}
-                />
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-1 h-8 bg-secondary rounded-full" />
-                  <h2 className="font-headline-lg text-headline-lg text-on-primary">
-                    {t("founder.message.title")}
-                  </h2>
+              <div className="bg-primary-container rounded-2xl overflow-hidden relative">
+                <div className="flex flex-col md:flex-row">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/img/3.avif"
+                    alt="Founder"
+                    className="w-full md:w-2/5 object-cover shrink-0"
+                  />
+                  <div className="p-10 relative flex-1">
+                    <div
+                      className="absolute top-0 right-0 w-48 h-48 opacity-5 pointer-events-none"
+                      style={{ backgroundImage: "radial-gradient(#ffffff 1px, transparent 1px)", backgroundSize: "20px 20px" }}
+                    />
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="w-1 h-8 bg-secondary rounded-full" />
+                      <h2 className="font-headline-lg text-headline-lg text-on-primary">
+                        {t("founder.message.title")}
+                      </h2>
+                    </div>
+                    <blockquote className="space-y-5 text-on-primary-container font-body-md text-body-md leading-relaxed relative">
+                      <span className="absolute -top-4 -left-2 text-7xl text-secondary/30 font-serif leading-none select-none">&ldquo;</span>
+                      <p className="pl-6">{t("founder.message.p1")}</p>
+                      <p className="pl-6">{t("founder.message.p2")}</p>
+                      <p className="pl-6">{t("founder.message.p3")}</p>
+                      <p className="pl-6">{t("founder.message.p4")}</p>
+                      <p className="pl-6 font-semibold text-on-primary">
+                        {t("founder.message.p5")}
+                      </p>
+                    </blockquote>
+                  </div>
                 </div>
-                <blockquote className="space-y-5 text-on-primary-container font-body-md text-body-md leading-relaxed relative">
-                  <span className="absolute -top-4 -left-2 text-7xl text-secondary/30 font-serif leading-none select-none">&ldquo;</span>
-                  <p className="pl-6">{t("founder.message.p1")}</p>
-                  <p className="pl-6">{t("founder.message.p2")}</p>
-                  <p className="pl-6">{t("founder.message.p3")}</p>
-                  <p className="pl-6">{t("founder.message.p4")}</p>
-                  <p className="pl-6 font-semibold text-on-primary">
-                    {t("founder.message.p5")}
-                  </p>
-                </blockquote>
               </div>
 
             </div>

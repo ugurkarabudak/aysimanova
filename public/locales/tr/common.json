@@ -109,8 +109,8 @@
       "description": "Misyonumuz; güven, kalite ve tutarlılık temelinde uzun vadeli ortaklıklar kurmaktır. Uluslararası tedarik, ithalat-ihracat operasyonları ve tedarik zinciri yönetiminde uzmanlaşarak kritik ürünlerin küresel pazarlara tam güvenilirlikle ulaşmasını sağlıyoruz."
     },
     "story": {
-      "title": "Her Tedarikatta Hassasiyet",
-      "paragraph1": "Aysima Nova Life Sciences, küresel lojistiğe uygulanan bilimsel hassasiyet ilkesi üzerine kurulmuştur. Sadece ticaret yapmıyoruz; seçiyoruz. Her kimyasal bileşik, kozmetik içerik ve ilaç hammaddesi titiz bir değerlendirme sürecinden geçmektedir.",
+      "title": "Her Tedarikte Hassasiyet",
+      "paragraph1": "Aysima Nova Life Sciences, küresel lojistiğe uygulanan bilimsel hassasiyet ilkesi üzerine kurulmuştur. Her kimyasal bileşik, kozmetik içerik, gıda hammaddeleri ve ilaç hammaddesi titiz bir değerlendirme sürecinden geçmektedir. Biz pazarlama yapmıyoruz, katma değerli ürün yaratıyor ve sunuyoruz",
       "paragraph2": "Uzman ekibimiz, uluslararası ticaretin karmaşıklıklarını aşmak için tedarik zinciri yönetimindeki onlarca yıllık deneyimini kullanmakta; iş ortaklarımıza kaynaktan varış noktasına kesintisiz bir yol sunmaktadır.",
       "stat": "7/24",
       "statLabel": "Tedarik Takibi",
@@ -178,16 +178,24 @@
       "educationLabel": "Eğitim",
       "educationValue": "Kimya, Sakarya Üniversitesi (2003)",
       "foundedLabel": "Kuruluş",
-      "foundedValue": "Aysima Nova Life Sciences, Mayıs 2026",
+      "foundedValue": "Aysima Nova Life Sciences, Haziran 2026",
       "expertiseLabel": "Uzmanlık",
-      "expertiseValue": "İlaç Ar-Ge, CMC, Kalite",
-      "tags": ["Ar-Ge Yönetimi", "Analitik Kimya", "Metot Validasyonu", "Stabilite Çalışmaları", "CMC İşleri", "Kalite Kontrol"]
+      "expertiseValue": "İlaç Ar-Ge, CMC, Kalite, Üretim",
+      "tags": [
+        "Ar-Ge Yönetimi",
+        "Analitik Kimya",
+        "Metot Validasyonu",
+        "Stabilite Çalışmaları",
+        "CMC İşleri",
+        "Kalite Kontrol",
+        "Üretim Optimizasyonu ve İyileştirme"
+      ]
     },
     "profile": {
       "title": "Kurucu Profili",
       "p1": "2003 yılında Sakarya Üniversitesi Fen-Edebiyat Fakültesi Kimya Bölümü'nden mezun olan kurucumuz, profesyonel kariyerine önde gelen ulusal ve uluslararası ilaç şirketlerinin Ar-Ge departmanlarında başladı.",
-      "p2": "Kariyeri boyunca analitik metot geliştirme, metot validasyonu, stabilite çalışmaları, Ar-Ge yönetimi ve CMC düzenleyici işleri konularında uzmanlaştı. Yıllar içinde Ar-Ge Müdürü, Ar-Ge ve Kalite Kontrol Müdürü, Yetkili Kişi ve Fabrika Müdürü gibi üst düzey liderlik pozisyonlarında görev aldı.",
-      "p3": "İlaç ve kimya sektörlerindeki geniş deneyimiyle Mayıs 2026'da Aysima Nova'yı kurdu; bilimsel mükemmelliği, kalite odaklı yönetimi ve sürdürülebilir bir iş anlayışını kendi kurumsal felsefesi çerçevesinde bir araya getirdi.",
+      "p2": "Kariyeri boyunca stabilite çalışmaları, formülasyon çalışmaları, Ar-Ge yönetimi, ruhsatlandırma yönetimi, üretim optimizasyonu, transfer validasyonu, fabrika kurulum teknik ve kalite konularında uzmanlaştı. Yıllar içinde Ar-Ge Müdürü, Ar-Ge ve Kalite Kontrol Müdürü, Yetkili Kişi ve Fabrika Müdürü gibi üst düzey liderlik pozisyonlarında görev aldı.",
+      "p3": "İlaç ve kimya sektörlerindeki geniş deneyimiyle Haziran 2026'da Aysima Nova'yı kurdu; bilimsel mükemmelliği, kalite odaklı yönetimi ve sürdürülebilir bir iş anlayışını kendi kurumsal felsefesi çerçevesinde bir araya getirdi.",
       "p4": "Bugün şirket, kalite, güvenilirlik, inovasyon ve bilimsel bütünlüğe güçlü bir bağlılıkla faaliyetlerini sürdürmektedir."
     },
     "career": {
@@ -199,7 +207,7 @@
     "message": {
       "title": "Kurucunun Mesajı",
       "p1": "Aysima Nova'da bilimin yalnızca bir disiplin değil, aynı zamanda bir sorumluluk olduğuna inanıyoruz.",
-      "p2": "İlaç ve kimya sektörlerindeki uzun yılların deneyiminin ardından — laboratuvar operasyonlarından üst düzey yönetime kadar — bu şirketi net bir vizyonla kurdum: kalite, güven, sürdürülebilirlik ve bilimsel bütünlük üzerine inşa edilmiş bir yapı oluşturmak.",
+      "p2": "İlaç ve kimya sektörlerinde uzun yıllara dayanan deneyimlerin ardından bu şirketi net bir vizyonla kurdum: kalite, güven, sürdürülebilirlik ve bilimsel bütünlük üzerine inşa edilmiş bir yapı oluşturmak.",
       "p3": "Hedefimiz; güvenilir ürünler, güçlü iş ortaklıkları ve inovasyona sürekli bağlılık aracılığıyla uzun vadeli değer yaratmaktır.",
       "p4": "Sektöre profesyonellik, etik standartlar ve bilime olan tutkumuzla katkıda bulunmaya adanmış durumdayız.",
       "p5": "Yolculuğumuzun bir parçası olduğunuz için teşekkür ederiz."
@@ -219,11 +227,11 @@
       "warehousing": "Depolama",
       "warehousingDesc": "Yaşam bilimleri ürünleri için sıcaklık kontrollü depolama çözümleri.",
       "compliance": "Uyumluluk",
-      "complianceDesc": "Sorunsuz ticaret için eksiksiz dokümantasyon ve gümrük clearance."
+      "complianceDesc": "Sorunsuz ticaret için eksiksiz dokümantasyon ve gümrük şeffaflığı."
     },
     "services": {
       "title": "Uçtan Uca Ticaret Hizmetleri",
-      "description": "Sadece mal taşımıyoruz; hassasiyete odaklı tedarik zinciri yönetimiyle ticari başarıyı tasarlıyoruz.",
+      "description": "Sadece malzeme taşımıyoruz; hassasiyete odaklı tedarik zinciri yönetimiyle ticari başarıyı tasarlıyoruz.",
       "importExport": {
         "title": "İthalat ve İhracat",
         "description": "İlaçlar ve yüksek teknolojili biyolojik materyallere odaklanarak uluslararası sınırları aşıyoruz.",
@@ -362,13 +370,14 @@
       "sourcing": "Küresel Tedarik",
       "importExport": "İthalat ve İhracat",
       "techSupport": "Teknik Destek",
-      "rdConsulting": "Ar-Ge Danışmanlığı"
+      "rdConsulting": "Ar-Ge Danışmanlığı",
+      "sciTechAdvisory": "Bilimsel ve Teknik Danışmanlık"
     },
     "contact": {
       "title": "İletişim",
       "location": "Tuzla / İstanbul, Türkiye"
     },
     "copyright": "© AYSİMA NOVA LİFE SCİENCES KİMYA VE DIŞ TİCARET LİMİTED ŞİRKETİ. Tüm hakları saklıdır.",
-    "tagline": "Tedarikatta Küresel Mükemmellik"
+    "tagline": "Tedarikte Küresel Mükemmellik"
   }
 }
