@@ -53,7 +53,7 @@ export default function Header({ lng }: { lng: string }) {
         <Link href={`/${lng}`} className="shrink-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/logo.png"
+            src="/logofull.png"
             alt="Aysima Nova"
             style={{ height: "52px", width: "auto", display: "block" }}
             className="!h-[52px] !w-auto"

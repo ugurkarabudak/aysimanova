@@ -54,7 +54,7 @@ export default function HeroSlider({ lng }: { lng: string }) {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/logo-wb.png"
+            src="/logofull.png"
             alt="Aysima Nova"
             style={{
               height: 200,
