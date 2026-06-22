@@ -61,7 +61,7 @@ export default function Header({ lng }: { lng: string }) {
         </Link>
 
         {/* Desktop nav links */}
-        <div className="hidden md:flex items-center gap-0.5">
+        <div className="hidden md:flex items-center gap-0.5 ml-10">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             return (
