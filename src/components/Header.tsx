@@ -55,20 +55,20 @@ export default function Header({ lng }: { lng: string }) {
           <img
             src="/logofull.png"
             alt="Aysima Nova"
-            style={{ height: "52px", width: "auto", display: "block" }}
-            className="!h-[52px] !w-auto"
+            style={{ height: "40px", width: "auto", display: "block" }}
+            className="!h-[40px] !w-auto"
           />
         </Link>
 
         {/* Desktop nav links */}
-        <div className="hidden md:flex items-center gap-0.5 ml-10">
+        <div className="hidden md:flex items-center gap-0.5">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`relative px-3.5 py-2 rounded-lg text-[13px] font-semibold tracking-wide transition-all duration-200 ${
+                className={`relative px-2.5 py-2 rounded-lg text-[12px] font-semibold tracking-wide whitespace-nowrap transition-all duration-200 ${
                   isActive
                     ? "text-primary bg-surface-container-low"
                     : "text-on-surface-variant hover:text-primary hover:bg-surface-container-low/70"
